@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class localMoney : MonoBehaviour
 {
     static public int localCoins=0;
-    public GameObject tekst;
+    public GameObject tekst1;
+    public GameObject tekst2;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class localMoney : MonoBehaviour
     // Update is called once per frame
     public void updateLocalCoins()
     {
-        tekst.GetComponent<Text>().text = "" + localCoins;
+        tekst1.GetComponent<Text>().text = "" + localCoins;
+        tekst2.GetComponent<Text>().text = "" + localCoins;
     }
 }

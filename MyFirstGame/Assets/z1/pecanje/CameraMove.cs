@@ -10,7 +10,7 @@ public class CameraMove : MonoBehaviour
     public float camspeed = 0.75f,camspeed1;
     public int brojZakacenihRibica=0;
     public bool uslovVracanja = false;
-    public static float uze=10f;
+    public static float uze=150f;
     public static int brojMaxZakacenihRibica=5;
 
 
@@ -56,6 +56,7 @@ public class CameraMove : MonoBehaviour
         }
         else
         {
+            
             //aktiviraj dugme za kraj igre - deaktiviraj ga na pocetku uvijek (start(){});
 
         }

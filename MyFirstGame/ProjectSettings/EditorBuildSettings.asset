@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: b7dcad6f007db6b499efbac3a9789541
   - enabled: 1
     path: Assets/z1/shopGun.unity
-    guid: 60a79646014888548bc6ee2dcda7b093
+    guid: 67155ac70b2c4b44a8ad3d9a1a12bda9
   - enabled: 1
     path: Assets/z1/shopMamac.unity
     guid: 402029caf2d20134facda2beb8320632

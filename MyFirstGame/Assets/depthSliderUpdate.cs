@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class depthSliderUpdate : MonoBehaviour
 {
+
     void Update()
     {
         gameObject.GetComponent<Slider>().value= 1 + (Camera.main.transform.position.y - 1) / CameraMove.uze;
