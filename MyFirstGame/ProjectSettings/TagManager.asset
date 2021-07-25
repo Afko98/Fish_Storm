@@ -12,6 +12,7 @@ TagManager:
   - uhvacena
   - ribaJelly
   - depthBar
+  - endScreen
   layers:
   - Default
   - TransparentFX
