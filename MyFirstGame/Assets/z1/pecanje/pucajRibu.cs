@@ -3,13 +3,17 @@ using UnityEngine;
 using System.Collections;
 public class pucajRibu : MonoBehaviour
 {
-    public GameObject go;
+
+    public static int brojMetaka = 2;
 
     private void OnMouseDown()
     {
-       if (Camera.main.transform.position.y>2)
+
+        if (Camera.main.transform.position.y > 2 && brojMetaka > 0)
+            brojMetaka--;
                 p();
     }
+    
     public void p()
     {
         Vector3 mousePosition = Input.mousePosition;
@@ -23,10 +27,14 @@ public class pucajRibu : MonoBehaviour
         {
             foreach (Collider2D c in col)
             {
+                if (c.gameObject.tag != "uhvacena")
+                    continue;
                 //Debug.Log("Collided with: " + c.collider2D.gameObject.name);
                 localMoney.localCoins -= (int)c.gameObject.transform.position.z;
-                go.GetComponent<localMoney>().updateLocalCoins();
+                currency.allCurrency -= (int)c.gameObject.transform.position.z;
+                
                 Destroy(c.gameObject);
+
             }
         }
     }
