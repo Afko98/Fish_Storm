@@ -20,6 +20,7 @@ public class uhvatiRibu : MonoBehaviour
     {
         if (collider.name != "kuka1" || CameraMove.brojMaxZakacenihRibica == GameObject.FindGameObjectsWithTag("uhvacena").Length)
             return;
+        gameObject.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
         ribaNiz.Add(gameObject);
         
     }

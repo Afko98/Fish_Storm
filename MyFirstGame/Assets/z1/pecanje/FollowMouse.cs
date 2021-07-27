@@ -4,7 +4,7 @@ using System.Collections;
 
 public class FollowMouse : MonoBehaviour
 {
-    public float moveSpeed = 0.004f;
+    public static float moveSpeed = 0.004f;
     public float moveSpeedCam = 0.75f;
     public bool uslov;
     public int brojObicnih, brojStruja, brojUkupnih;
@@ -34,7 +34,7 @@ public class FollowMouse : MonoBehaviour
         
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (cursorPos.y <= 1)
-            yKoordinata = cursorPos.y;
+            yKoordinata = cursorPos.y+1.2f;
         else
             yKoordinata = 1;
         if (cursorPos.x > 2.5)
@@ -42,10 +42,11 @@ public class FollowMouse : MonoBehaviour
         if (cursorPos.x < -2.5)
             cursorPos.x = -2.5f;
         Vector2 mousePosition = new Vector2(cursorPos.x, yKoordinata);
-        
-        
-        
-        transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+
+        transform.position= Vector2.Lerp(transform.position, mousePosition, moveSpeed);
+        transform.position = new Vector2(transform.position.x, transform.position.y - moveSpeedCam * Time.deltaTime);
+
+
     }
     void PremaGore()
     {
