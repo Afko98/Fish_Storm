@@ -5,13 +5,21 @@ public class pucajRibu : MonoBehaviour
 {
 
     public static int brojMetaka = 2;
+    public static int brM;
+    public void Start()
+    {
+        brM = brojMetaka;
+    }
 
     private void OnMouseDown()
     {
 
-        if (Camera.main.transform.position.y > 2 && brojMetaka > 0)
-            brojMetaka--;
-                p();
+        if (Camera.main.transform.position.y > 2 && brM > 0)
+        {
+            Debug.Log(brM);
+            brM-=1;
+            p();
+        }
     }
     
     public void p()

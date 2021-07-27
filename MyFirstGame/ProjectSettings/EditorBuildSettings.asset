@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/z1/shopMamac.unity
     guid: 402029caf2d20134facda2beb8320632
+  - enabled: 1
+    path: Assets/z1/shopKuka.unity
+    guid: 889994e9b9a039c4d9c1fec084a8fd89
   m_configObjects: {}

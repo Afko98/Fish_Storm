@@ -400,7 +400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870efa5529c746b4e8a9c602248de40a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go: {fileID: 1236983345}
 --- !u!1 &204480797
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +618,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -633,8 +632,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364010645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18, y: 0.61, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.20250002, z: 1}
+  m_LocalPosition: {x: -0.2681, y: -0.5845, z: 0}
+  m_LocalScale: {x: 0.25978935, y: 0.2575163, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -673,8 +672,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.34234706, y: -0.45100644}
-  m_Size: {x: 0.66815966, y: 0.80431604}
+  m_Offset: {x: -0.35858792, y: -0.44471174}
+  m_Size: {x: 0.45747706, y: 0.6125426}
   m_Direction: 0
 --- !u!1 &423352936
 GameObject:
@@ -1005,7 +1004,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camspeed: 0.75
   camspeed1: 0
-  brojZakacenihRibica: 0
   uslovVracanja: 0
 --- !u!114 &596596398
 MonoBehaviour:
@@ -2712,7 +2710,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tekst1: {fileID: 2022400097}
   tekst2: {fileID: 1862875896}
-  parePrebacene: 0
+  brMetakaText: {fileID: 1755976204}
+  brUhvacenihRibica: {fileID: 834732119}
 --- !u!1 &1394534460
 GameObject:
   m_ObjectHideFlags: 0
@@ -3709,7 +3708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870efa5529c746b4e8a9c602248de40a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go: {fileID: 1236983345}
 --- !u!1 &1948633981
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,7 +4166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870efa5529c746b4e8a9c602248de40a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  go: {fileID: 1236983345}
 --- !u!1001 &4492392296720136952
 PrefabInstance:
   m_ObjectHideFlags: 0

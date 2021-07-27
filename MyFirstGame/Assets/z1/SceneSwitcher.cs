@@ -27,6 +27,10 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene(4);
     }
     
+    public void shopKuka()
+    {
+        SceneManager.LoadScene(5);
+    }
 
 
 }
