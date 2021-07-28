@@ -858,7 +858,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 100
+  m_Spacing: 20
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -1790,9 +1790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camspeed: 0.5
   camspeed1: 0
-  brojZakacenihRibica: 0
   uslovVracanja: 0
-  uze: 50
 --- !u!224 &1152097692 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5308307112204689975, guid: 68d179de43bf0404bab7507e17560e59,

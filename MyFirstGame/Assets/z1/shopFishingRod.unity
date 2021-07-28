@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 93326525}
   - component: {fileID: 93326526}
   m_Layer: 5
-  m_Name: buyHook
+  m_Name: buyRod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,16 +168,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 93326524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c2608932b872a643be83495e4f848da, type: 3}
+  m_Script: {fileID: 11500000, guid: e3272815829f8814abf02a857fd6330a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  v1: {fileID: 8932819656145800529}
-  v2: {fileID: 1481693820}
-  v3: {fileID: 1553349412}
-  v4: {fileID: 0}
-  v5: {fileID: 0}
-  v6: {fileID: 0}
-  coinupdate: {fileID: 1452194401}
+  v1: {fileID: 1436066974}
+  v2: {fileID: 671450759}
+  v3: {fileID: 94701083}
+  v4: {fileID: 2097331579}
+  v5: {fileID: 373770799}
+  v6: {fileID: 709913982}
+  coinupdate: {fileID: 0}
+--- !u!114 &94701083 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 1553349410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &130048440
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +507,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -331.37
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: REACH A DEPTH OF 310M
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 8000
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -610,6 +632,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: template (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: FISHING ROD V
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -629,7 +656,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 93326526}
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -652,6 +679,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4151fefd4eb2c4a45af76f8a2ac1f017, type: 3}
+--- !u!114 &373770799 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 169941728}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &662004680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -684,6 +723,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -331.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: REACH A DEPTH OF 220M
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -800,6 +849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: template (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: FISHING ROD IV
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -819,7 +873,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 93326526}
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -842,6 +896,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4151fefd4eb2c4a45af76f8a2ac1f017, type: 3}
+--- !u!114 &671450759 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 1481693818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &702871975
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,6 +974,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &709913982 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 1914687796}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &791178974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1289,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1553349410}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1436066974 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 8932819656145800527}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1452194401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,14 +1431,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 'YOU HAVE 5
-
-        SHOOTS,
-
-
-        SMALL AREA
-
-        OF DMG'
+      value: REACH A DEPTH OF 100M
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1473,7 +1556,7 @@ PrefabInstance:
     - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: GUN I
+      value: FISHING ROD II
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1494,7 +1577,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 93326526}
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1517,18 +1600,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4151fefd4eb2c4a45af76f8a2ac1f017, type: 3}
---- !u!114 &1481693820 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
-    type: 3}
-  m_PrefabInstance: {fileID: 1481693818}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1485369505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,14 +1721,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 'YOU HAVE 5
-
-        SHOOTS,
-
-
-        2x AREA
-
-        OF DMG'
+      value: REACH A DEPTH OF 150M
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1784,7 +1848,7 @@ PrefabInstance:
     - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: GUN II
+      value: FISHING ROD III
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1805,7 +1869,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 93326526}
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1828,18 +1892,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4151fefd4eb2c4a45af76f8a2ac1f017, type: 3}
---- !u!114 &1553349412 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
-    type: 3}
-  m_PrefabInstance: {fileID: 1553349410}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1613889517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,7 +2184,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HOOK
+  m_Text: 'ROB
 
     SHOP'
 --- !u!222 &1763492482
@@ -2181,6 +2233,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -331.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: REACH A DEPTH OF 400M
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 14000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2297,6 +2359,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: template (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: FISHING ROD VI
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2316,7 +2383,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 93326526}
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2522,6 +2589,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062971418}
   m_CullTransparentMesh: 1
+--- !u!114 &2097331579 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 662004680}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8932819656145800527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2554,6 +2633,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -332.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: REACH A DEPTH OF 50M
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2670,6 +2759,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: template
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: FISHING ROD I
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574937, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 97.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574937, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 298.06003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574937, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -128.32016
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2689,7 +2798,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 93326526}
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2712,15 +2821,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4151fefd4eb2c4a45af76f8a2ac1f017, type: 3}
---- !u!114 &8932819656145800529 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
-    type: 3}
-  m_PrefabInstance: {fileID: 8932819656145800527}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -44,7 +44,7 @@ public class BuyRod : MonoBehaviour
             v4.GetComponent<Text>().text = "" + rod4p;
             v5.GetComponent<Text>().text = "" + rod5p;
             v6.GetComponent<Text>().text = "" + rod6p;
-            CameraMove.uze = 100;
+            CameraMove.uze = 50;
 
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -69,7 +69,7 @@ public class BuyRod : MonoBehaviour
             v6.GetComponent<Text>().text = "" + rod6p;
             FollowMouse.moveSpeed = 1.5f * 0.004f;
 
-            CameraMove.uze = 200;
+            CameraMove.uze = 100;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -93,7 +93,7 @@ public class BuyRod : MonoBehaviour
             v6.GetComponent<Text>().text = "" + rod6p;
             FollowMouse.moveSpeed = 2f * 0.004f;
 
-            CameraMove.uze = 300;
+            CameraMove.uze = 150;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -116,7 +116,7 @@ public class BuyRod : MonoBehaviour
             v6.GetComponent<Text>().text = "" + rod6p;
             FollowMouse.moveSpeed = 3f * 0.004f;
 
-            CameraMove.uze = 400;
+            CameraMove.uze = 220;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -139,7 +139,7 @@ public class BuyRod : MonoBehaviour
             v6.GetComponent<Text>().text = "" + rod6p;
             FollowMouse.moveSpeed = 4f * 0.004f;
 
-            CameraMove.uze = 500;
+            CameraMove.uze = 310;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -162,7 +162,7 @@ public class BuyRod : MonoBehaviour
             v6.GetComponent<Text>().text = "IN USE";
             FollowMouse.moveSpeed = 5f * 0.004f;
 
-            CameraMove.uze = 600;
+            CameraMove.uze = 400;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
