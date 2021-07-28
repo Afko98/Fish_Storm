@@ -31,6 +31,10 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene(5);
     }
+    public void shopRod()
+    {
+        SceneManager.LoadScene(6);
+    }
 
 
 }

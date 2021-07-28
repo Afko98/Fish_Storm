@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/z1/shopKuka.unity
     guid: 889994e9b9a039c4d9c1fec084a8fd89
+  - enabled: 1
+    path: Assets/z1/shopFishingRod.unity
+    guid: 7fb6dc3fde2d390408fa3f5abd680d1c
   m_configObjects: {}
