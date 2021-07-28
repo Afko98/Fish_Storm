@@ -156,6 +156,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -323
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: '4 NADES
+
+
+        4.7X DMG AREA'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 9000
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -304,7 +317,7 @@ PrefabInstance:
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: buysling
+      value: buynade
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -375,6 +388,12 @@ MonoBehaviour:
   v1: {fileID: 8932819656145800529}
   v2: {fileID: 1481693820}
   v3: {fileID: 1553349412}
+  v4: {fileID: 1192667051}
+  v5: {fileID: 1225256306}
+  v6: {fileID: 327354548}
+  v7: {fileID: 395178547}
+  v8: {fileID: 831517888}
+  v9: {fileID: 183986166}
   coinupdate: {fileID: 1452194401}
 --- !u!1 &130048440
 GameObject:
@@ -631,6 +650,12 @@ MonoBehaviour:
   v1: {fileID: 0}
   v2: {fileID: 0}
   v3: {fileID: 0}
+  v4: {fileID: 0}
+  v5: {fileID: 0}
+  v6: {fileID: 0}
+  v7: {fileID: 0}
+  v8: {fileID: 0}
+  v9: {fileID: 0}
   coinupdate: {fileID: 0}
 --- !u!1 &140162065
 GameObject:
@@ -708,6 +733,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140162065}
   m_CullTransparentMesh: 1
+--- !u!114 &183986166 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 376933997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &327354548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 1557169276}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &376933997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -740,6 +789,19 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: '15 SHOOTS
+
+
+        2.3X DMG AREA'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 13000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -889,7 +951,7 @@ PrefabInstance:
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: buysling
+      value: buyminigun
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -909,6 +971,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 376933997}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &395178547 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 1429354882}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &650942557 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8932819656525935923, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
@@ -1062,6 +1136,39 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -336.3
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: '6 SHOOTS
+
+
+        1.5X DMG AREA'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406675, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 438.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406675, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 261.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406675, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 312
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406675, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -597
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 800
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1210,7 +1317,7 @@ PrefabInstance:
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: buysling
+      value: buysmg
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1224,6 +1331,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4151fefd4eb2c4a45af76f8a2ac1f017, type: 3}
+--- !u!114 &831517888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 35888506}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &949053571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,6 +1423,19 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -335.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: '4 SHOOTS
+
+
+        2X DMG AREA'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 2200
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1453,7 +1585,7 @@ PrefabInstance:
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: buysling
+      value: buypumpy1
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1550,6 +1682,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1192667051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 814649761}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1225256306 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+    type: 3}
+  m_PrefabInstance: {fileID: 1098774237}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1284849090 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8932819656525935923, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
@@ -1707,6 +1863,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -334
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: '8 SHOOTS
+
+
+        1.5X DMG AREA'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 5500
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1855,7 +2024,7 @@ PrefabInstance:
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: buysling
+      value: buyak
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1999,19 +2168,15 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 'YOU HAVE 5
-
-        SHOOTS,
+      value: '3 SHOOTS
 
 
-        SMALL AREA
-
-        OF DMG'
+        1.2X DMG AREA'
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 100
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2377,21 +2542,15 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 'YOU HAVE 5
-
-        SHOOTS,
+      value: '6 SHOOTS
 
 
-        2x AREA
-
-        OF DMG'
+        1.2X DMG AREA'
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: '850
-
-'
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2600,6 +2759,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -321.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: '4 SHOOTS
+
+
+        3X DMG AREA'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 4400
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2748,7 +2920,7 @@ PrefabInstance:
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: buysling
+      value: buypumpy2
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657426730227, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -3267,6 +3439,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 137341395}
     m_Modifications:
+    - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: '3 SHOOTS
+
+
+        1X DMG AREA'
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
