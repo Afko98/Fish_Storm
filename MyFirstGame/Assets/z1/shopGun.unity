@@ -271,6 +271,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: template (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: NADE
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -559,7 +564,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 90
+  m_Spacing: 20
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -850,6 +855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: template (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: MINIGUN
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1167,6 +1177,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: template (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: SMG
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1404,6 +1419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: template (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: PUMPY
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1801,6 +1821,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: template (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: AK
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2689,6 +2714,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: template (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: PUMPY II
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
