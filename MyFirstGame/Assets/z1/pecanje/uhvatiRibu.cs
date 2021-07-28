@@ -18,8 +18,9 @@ public class uhvatiRibu : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.name != "kuka1" || CameraMove.brojMaxZakacenihRibica == GameObject.FindGameObjectsWithTag("uhvacena").Length)
+        if (collider.name != "kuka1" || CameraMove.brojMaxZakacenihRibica <= GameObject.FindGameObjectsWithTag("uhvacena").Length)
             return;
+        gameObject.GetComponent<Collider2D>().enabled = !gameObject.GetComponent<Collider2D>().enabled;
         gameObject.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
         ribaNiz.Add(gameObject);
         
@@ -42,12 +43,11 @@ public class uhvatiRibu : MonoBehaviour
 
         for(int i = 0; i < ribaNiz.Count; i++)
         {
+                
+                
+
             ribaNiz[i].transform.position = new Vector3(kuka.transform.position.x,kuka.transform.position.y,ribaNiz[i].transform.position.z);
             ribaNiz[i].transform.tag = "uhvacena";
-
-                if(ribaNiz[i].GetComponent<Collider2D>().enabled)
-                ribaNiz[i].GetComponent<Collider2D>().enabled=!ribaNiz[i].GetComponent<Collider2D>().enabled;
-
 
         }
     }

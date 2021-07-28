@@ -44,7 +44,7 @@ public class FollowMouse : MonoBehaviour
         Vector2 mousePosition = new Vector2(cursorPos.x, yKoordinata);
 
         transform.position= Vector2.Lerp(transform.position, mousePosition, moveSpeed);
-        transform.position = new Vector2(transform.position.x, transform.position.y - moveSpeedCam * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, transform.position.y - moveSpeedCam * Time.deltaTime,-350f);
 
 
     }

@@ -29,14 +29,14 @@ public class ribicaSpawn : MonoBehaviour
         if (pos1.y<pos2.y)
         {
             
-                if(pos1.y>-19f)
+                if(pos1.y>-18f)
                 for (int i = 0; i < Random.Range(10f, 30f); i++)
                 {
                     obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 60f)/6f,-1f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     obicnaKlon.name = "ribaObicna" + brojacObicna;
                     brojacObicna++;
                 }
-                else if(pos1.y>-60)
+                else if(pos1.y>-35)
                     for (int i = 0; i < Random.Range(6f, 14f); i++)
                     {
                         obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f)/10f, pos2.y - 5.12f - Random.Range(0f, 60f) / 6f, -1f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
@@ -52,7 +52,7 @@ public class ribicaSpawn : MonoBehaviour
                 }
 
                 ///////////////////////////////////////////////////////////////
-            if (pos1.y < -25f && pos1.y>-70)
+            if (pos1.y < -22f && pos1.y>-55f)
             {
                 for (int i = 0; i < Random.Range(4f, 13f); i++)
                 {
@@ -61,7 +61,7 @@ public class ribicaSpawn : MonoBehaviour
                     brojacStruja++;
                 }
             }
-            else if (pos1.y < -70 && pos1.y>-100)
+            else if ((pos1.y < -55 && pos1.y>-90)|| (pos1.y < -12 && pos1.y > -22))
             {
                 for (int i = 0; i < Random.Range(2f, 6f); i++)
                 {
@@ -70,8 +70,8 @@ public class ribicaSpawn : MonoBehaviour
                     brojacStruja++;
                 }
             }
-            else if (Random.Range(0f, 10f)  > 2 && pos1.y < -100)
-                for (int i = 0; i < Random.Range(0f, 2f); i++)
+            else if (pos1.y < -90f)
+                for (int i = 0; i < Random.Range(0f, 4f); i++)
                 {
                     strujaKlon = Instantiate(ribaStruja, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 60f) / 6f, -3f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     strujaKlon.name = "ribaStruja" + brojacStruja;
@@ -79,7 +79,7 @@ public class ribicaSpawn : MonoBehaviour
                 }
             ///////////////////////////////
 
-            if (pos1.y < -70f && pos1.y > -120f)
+            if (pos1.y < -49f && pos1.y > -100f)
             {
                 for (int i = 0; i < Random.Range(3f, 8f); i++)
                 {
@@ -88,15 +88,15 @@ public class ribicaSpawn : MonoBehaviour
                     
                 }
             }
-            else if(pos1.y < -120f && pos1.y>-150f)
+            else if(pos1.y < -100f && pos1.y>-150f)
                 for (int i = 0; i < Random.Range(2f, 5f); i++)
                 {
                     strujaKlon = Instantiate(ribaJelly, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 60f) / 6f, -8f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     strujaKlon.name = "ribaJelly" + brojacStruja;
 
                 }
-            else if (Random.Range(0f, 10f) > 3 && pos1.y<-150)
-                for (int i = 0; i < Random.Range(0f, 2f); i++)
+            else if(pos1.y<-150f)
+                for (int i = 0; i < Random.Range(0f, 3f); i++)
                 {
                     strujaKlon = Instantiate(ribaJelly, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 60f) / 6f, -8f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     strujaKlon.name = "ribaJelly" + brojacStruja;
