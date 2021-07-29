@@ -31,7 +31,7 @@ public class CameraMove : MonoBehaviour
         if (uslovVracanja)
         {
             PremaGore();
-            camspeed1 = camspeed + 3.5f;
+            camspeed1 = camspeed + 6f;
         }
         else if (!uslovVracanja)
             PremaDole();
