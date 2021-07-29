@@ -41,10 +41,13 @@ public class FollowMouse : MonoBehaviour
             cursorPos.x = 2.5f;
         if (cursorPos.x < -2.5)
             cursorPos.x = -2.5f;
+        
         Vector2 mousePosition = new Vector2(cursorPos.x, yKoordinata);
 
         transform.position= Vector2.Lerp(transform.position, mousePosition, moveSpeed);
         transform.position = new Vector3(transform.position.x, transform.position.y - moveSpeedCam * Time.deltaTime,-350f);
+        if (transform.position.y > Camera.main.transform.position.y + 5f)
+            transform.position = new Vector3(transform.position.x, Camera.main.transform.position.y + 5f, -350f);
 
 
     }
