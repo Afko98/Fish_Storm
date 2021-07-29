@@ -7,11 +7,11 @@ public class CameraMove : MonoBehaviour
     // Start is called before the first frame update
 
     
-    public float camspeed = 0.75f,camspeed1;
+    public float camspeed = 0.8f,camspeed1;
     public static int brojZakacenihRibica=0;
     public bool uslovVracanja = false;
-    public static float uze=2000f;
-    public static int brojMaxZakacenihRibica=35;
+    public static float uze=250f;
+    public static int brojMaxZakacenihRibica=45;
 
 
 
@@ -68,7 +68,7 @@ public class CameraMove : MonoBehaviour
         Vector3 pos1 = transform.position;
        
       
-            camspeed += Time.deltaTime / 130;
+            camspeed += Time.deltaTime / 110;
         pos1.y -= Time.deltaTime * camspeed;
         transform.position = pos1;
 

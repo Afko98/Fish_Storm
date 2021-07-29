@@ -58,7 +58,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
             pucajRibu.brojMetaka = 3;
-            uhvatiRibu.dmg = 0.6f;
+            uhvatiRibu.dmg = 0.7f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -88,7 +88,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
             pucajRibu.brojMetaka = 3;
-            uhvatiRibu.dmg = 0.6f*1.3f;
+            uhvatiRibu.dmg = 0.7f*1.3f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -118,7 +118,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
             pucajRibu.brojMetaka = 6;
-            uhvatiRibu.dmg = 0.6f*1.3f;
+            uhvatiRibu.dmg = 0.7f*1.3f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -148,7 +148,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
             pucajRibu.brojMetaka = 6;
-            uhvatiRibu.dmg = 0.6f*1.6f;
+            uhvatiRibu.dmg = 0.7f*1.6f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -178,7 +178,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
             pucajRibu.brojMetaka = 4;
-            uhvatiRibu.dmg = 0.6f*2.1f;
+            uhvatiRibu.dmg = 0.7f*2.1f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -208,7 +208,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
             pucajRibu.brojMetaka = 4;
-            uhvatiRibu.dmg = 0.6f*3.1f;
+            uhvatiRibu.dmg = 0.7f*3.1f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -238,7 +238,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
             pucajRibu.brojMetaka = 8;
-            uhvatiRibu.dmg = 0.6f*1.6f;
+            uhvatiRibu.dmg = 0.7f*1.6f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -267,8 +267,8 @@ public class BuyGun : MonoBehaviour
             v8.GetComponent<Text>().text = "IN USE";
             v9.GetComponent<Text>().text = "" + minigunp;
 
-            pucajRibu.brojMetaka = 4;
-            uhvatiRibu.dmg = 0.6f*4.7f;
+            pucajRibu.brojMetaka = 3;
+            uhvatiRibu.dmg = 0.7f*4.7f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -297,7 +297,7 @@ public class BuyGun : MonoBehaviour
             v8.GetComponent<Text>().text = "" + nadep;
             v9.GetComponent<Text>().text = "IN USE";
 
-            uhvatiRibu.dmg = 0.6f*2.3f;
+            uhvatiRibu.dmg = 0.7f*2.3f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }

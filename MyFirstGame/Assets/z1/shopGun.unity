@@ -159,7 +159,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: '4 NADES
+      value: '3 NADES
 
 
         4.7X DMG AREA'

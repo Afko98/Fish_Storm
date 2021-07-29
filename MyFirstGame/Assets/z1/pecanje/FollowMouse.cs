@@ -5,7 +5,7 @@ using System.Collections;
 public class FollowMouse : MonoBehaviour
 {
     public static float moveSpeed = 0.004f;
-    public float moveSpeedCam = 0.75f;
+    public float moveSpeedCam = 0.8f;
     public bool uslov;
     public int brojObicnih, brojStruja, brojUkupnih;
     public float yKoordinata = 0f;
@@ -30,7 +30,7 @@ public class FollowMouse : MonoBehaviour
        
    
       
-            moveSpeedCam += Time.deltaTime / 130;
+            moveSpeedCam += Time.deltaTime / 110;
         
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (cursorPos.y <= 1)

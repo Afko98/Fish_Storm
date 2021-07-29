@@ -400,6 +400,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870efa5529c746b4e8a9c602248de40a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &202226433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 939464984386309325, guid: ecd92b1476d217346a37fec150a7d0bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 939464984577498680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &204480797
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,10 +438,12 @@ MonoBehaviour:
   ribaObicna: {fileID: 151434345}
   ribaStruja: {fileID: 2065042538}
   ribaJelly: {fileID: 1915317403}
+  ribaRavna: {fileID: 202226433}
   pos2: {x: 0, y: 0, z: 0}
   obicnaKlon: {fileID: 0}
   strujaKlon: {fileID: 0}
   jellyKlon: {fileID: 0}
+  ravnaKlon: {fileID: 0}
   brojacObicna: 0
   brojacStruja: 0
 --- !u!4 &204480799
@@ -566,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a2f894953ab3fd41903c90affd5ffdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeedCam: 0.75
+  moveSpeedCam: 0.8
   uslov: 0
   brojObicnih: 0
   brojStruja: 0
@@ -1001,7 +1009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d53a60f8e388c7b41a56649d5cfa8554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camspeed: 0.75
+  camspeed: 0.8
   camspeed1: 0
   uslovVracanja: 0
 --- !u!114 &596596398
