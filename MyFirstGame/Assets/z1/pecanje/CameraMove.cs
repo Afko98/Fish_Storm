@@ -11,7 +11,7 @@ public class CameraMove : MonoBehaviour
     public static int brojZakacenihRibica=0;
     public bool uslovVracanja = false;
     public static float uze=455f;
-    public static int brojMaxZakacenihRibica=100;
+    public static int brojMaxZakacenihRibica=10;
 
 
 

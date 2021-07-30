@@ -6,6 +6,7 @@ public class pucajRibu : MonoBehaviour
 
     public static int brojMetaka = 2;
     public static int brM;
+    public GameObject krv,krvKlon;
     public void Start()
     {
         brM = brojMetaka;
@@ -40,7 +41,8 @@ public class pucajRibu : MonoBehaviour
                 //Debug.Log("Collided with: " + c.collider2D.gameObject.name);
                 localMoney.localCoins -= (int)c.gameObject.transform.position.z;
                 currency.allCurrency -= (int)c.gameObject.transform.position.z;
-                
+                krvKlon=Instantiate(krv, c.gameObject.transform.position, Quaternion.identity);
+                krvKlon.GetComponent<Rigidbody2D>().velocity = c.gameObject.GetComponent<Rigidbody2D>().velocity;
                 Destroy(c.gameObject);
 
             }
