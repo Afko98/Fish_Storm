@@ -10,8 +10,8 @@ public class CameraMove : MonoBehaviour
     public float camspeed = 0.8f,camspeed1;
     public static int brojZakacenihRibica=0;
     public bool uslovVracanja = false;
-    public static float uze=250f;
-    public static int brojMaxZakacenihRibica=45;
+    public static float uze=455f;
+    public static int brojMaxZakacenihRibica=100;
 
 
 

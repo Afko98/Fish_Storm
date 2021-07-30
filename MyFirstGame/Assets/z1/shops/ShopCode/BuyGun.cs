@@ -297,6 +297,7 @@ public class BuyGun : MonoBehaviour
             v8.GetComponent<Text>().text = "" + nadep;
             v9.GetComponent<Text>().text = "IN USE";
 
+            pucajRibu.brojMetaka = 15;
             uhvatiRibu.dmg = 0.7f*2.3f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
