@@ -4,15 +4,24 @@ using UnityEngine;
 public class ribicaSpawn : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] GameObject ribaObicna, ribaStruja, ribaJelly, ribaRavna,ribaAjkula;
+    [SerializeField] GameObject ribaObicna, ribaStruja, ribaJelly, ribaRavna,ribaAjkula,ribaZlatna;
 
     public Vector3 pos2 = Camera.main.transform.position;
-    public GameObject obicnaKlon,strujaKlon,jellyKlon,ravnaKlon,ajkulaKlon;
+    public GameObject obicnaKlon,strujaKlon,jellyKlon,ravnaKlon,ajkulaKlon,blago,blagoKlon;
     public int brojacObicna = 0,brojacStruja=0;
 
 
     private void Start()
     {
+
+        float i = Random.Range(0.2f, 3.2f);
+        if(i>=3)
+            blagoKlon = Instantiate(blago, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 100f - Random.Range(0f, 40f), -200f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
+           if(i>=2)
+        blagoKlon = Instantiate(blago, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 140f - Random.Range(0f, 40f), -200f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
+        if(i>=1)
+        blagoKlon = Instantiate(blago, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 180f - Random.Range(0f, 40f), -200f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
+        
         obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 1.12f - Random.Range(0f, 4f),-1f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
         obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 1.12f - Random.Range(0f, 4f),-1f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
         obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 1.12f - Random.Range(0f, 4f),-1f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
@@ -152,6 +161,17 @@ public class ribicaSpawn : MonoBehaviour
                     ajkulaKlon.name = "ribaRavna" + brojacStruja;
 
                 }
+            //////////////////////////////////
+            
+
+            if (pos1.y < -240f)
+            {
+                for (int i = 0; i < Random.Range(-1f, 1.4f); i++)
+                {
+                    ajkulaKlon = Instantiate(ribaZlatna, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 60f) / 6f, -100f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
+                }
+            }
+
             //////////////////////////////////
 
             pos2.y-=5.12f;
