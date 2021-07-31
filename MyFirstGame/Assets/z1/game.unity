@@ -301,7 +301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132835657}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.85, y: 1.98, z: 0}
+  m_LocalPosition: {x: -29.41, y: 24.75, z: 0}
   m_LocalScale: {x: 0.84531987, y: 0.7928438, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -450,6 +450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kuka: {fileID: 0}
+  krv: {fileID: 0}
+  krvKlon: {fileID: 0}
   ribaNiz: []
   daLiJeIspaljena: 0
 --- !u!61 &151434348
@@ -625,7 +627,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: cf9fef0e5560ec04cb96561f4477f308, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -754,7 +756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364010645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 0.183, z: -350}
+  m_LocalPosition: {x: 0.05, y: 0.3, z: -350}
   m_LocalScale: {x: 0.2929903, y: 0.2751415, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1210,7 +1212,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 5156776694448688124, guid: 3c412dc4cf710d74285237986fb8d251,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1474,7 +1476,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7675826601332790545, guid: 6ca07fd63c7bf7442a278bb4714d37be,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1640,7 +1642,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: bce66f809eff2d4459b30f28fad24cfd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1761,7 +1763,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697328306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.94, y: 1.63, z: 0}
+  m_LocalPosition: {x: -27.5, y: 24.4, z: 0}
   m_LocalScale: {x: 0.37856373, y: 0.37068135, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1845,7 +1847,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &753474284
 RectTransform:
@@ -2326,6 +2328,7 @@ MonoBehaviour:
   strana: {fileID: 132835657}
   sredina: {fileID: 697328306}
   linija: {fileID: 2090422517}
+  bomba: {fileID: 1114006621}
 --- !u!4 &898834249
 Transform:
   m_ObjectHideFlags: 0
@@ -2411,7 +2414,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7675826601332790545, guid: 6ca07fd63c7bf7442a278bb4714d37be,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2731,6 +2734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kuka: {fileID: 0}
+  krv: {fileID: 0}
+  krvKlon: {fileID: 0}
   ribaNiz: []
   daLiJeIspaljena: 0
 --- !u!61 &1021006636
@@ -3036,9 +3041,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1114006623}
   - component: {fileID: 1114006622}
+  - component: {fileID: 1114006624}
+  - component: {fileID: 1114006625}
   m_Layer: 0
   m_Name: bomb_0
-  m_TagString: Untagged
+  m_TagString: bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3102,12 +3109,55 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114006621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.357, y: 26.918, z: 0}
+  m_LocalPosition: {x: -27.15, y: 26.46, z: 0}
   m_LocalScale: {x: 0.55, y: 0.55, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1114006624
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114006621}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.074270755, y: 0.36490193}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.93435484, y: 0.9731049}
+  m_EdgeRadius: 0
+--- !u!114 &1114006625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114006621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b4bc80ebb91bd4cbec48f284e6cd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kuka: {fileID: 0}
+  krv: {fileID: 1430749668}
+  krvKlon: {fileID: 0}
+  ribaNiz: []
+  daLiJeIspaljena: 0
 --- !u!1 &1179248950
 GameObject:
   m_ObjectHideFlags: 0
@@ -3606,7 +3656,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 0b30398eaff275d41bdb5f9208acdc62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4397,6 +4447,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kuka: {fileID: 0}
+  krv: {fileID: 0}
+  krvKlon: {fileID: 0}
   ribaNiz: []
   daLiJeIspaljena: 0
 --- !u!61 &1915317405
@@ -4540,7 +4592,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 51a901223c9bd54479224bf9c7f00ee4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4885,6 +4937,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kuka: {fileID: 0}
+  krv: {fileID: 0}
+  krvKlon: {fileID: 0}
   ribaNiz: []
   daLiJeIspaljena: 0
 --- !u!114 &2065042545
@@ -4997,7 +5051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090422517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.06, y: 1.48, z: 0}
+  m_LocalPosition: {x: -25.619999, y: 24.25, z: 0}
   m_LocalScale: {x: 0.9334874, y: 0.86700153, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

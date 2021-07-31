@@ -12,9 +12,12 @@ public class CameraMove : MonoBehaviour
     public bool uslovVracanja = false;
     public static float uze=455f;
     public static int brojMaxZakacenihRibica=10;
+    public static int brojMaxZakacenihUIgri;
 
-
-
+   public void Start()
+    {
+        brojMaxZakacenihUIgri = brojMaxZakacenihRibica;
+    }
 
     // Update is called once per frame
     public void Update()
@@ -24,7 +27,7 @@ public class CameraMove : MonoBehaviour
         
        
 
-        if (transform.position.y < -uze || brojZakacenihRibica >= brojMaxZakacenihRibica)
+        if (transform.position.y < -uze || brojZakacenihRibica >= brojMaxZakacenihUIgri)
         {
             uslovVracanja = true;
         }

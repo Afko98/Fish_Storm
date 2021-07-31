@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class uhvatiRibu : MonoBehaviour
 {
-    public GameObject kuka;
+    public GameObject kuka,krv,krvKlon;
     public List<GameObject> ribaNiz = new List<GameObject>();
     public static float dmg = 0.7f;
    
@@ -18,8 +18,20 @@ public class uhvatiRibu : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.name != "kuka1" || CameraMove.brojMaxZakacenihRibica <= GameObject.FindGameObjectsWithTag("uhvacena").Length)
+        if (collider.name != "kuka1" || CameraMove.brojMaxZakacenihUIgri<= GameObject.FindGameObjectsWithTag("uhvacena").Length)
             return;
+        if (gameObject.tag == "bomb")
+        {
+            for(int i = 0; i < GameObject.FindGameObjectsWithTag("uhvacena").Length / 3 - 0.1f; i++)
+            {
+                krvKlon=Instantiate(krv, kuka.transform.position, Quaternion.identity);
+                krvKlon.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-1f, 1f), 0f);
+                Destroy(GameObject.FindGameObjectsWithTag("uhvacena")[2 * (i + 1)]);
+                CameraMove.brojMaxZakacenihUIgri-=1;
+                Destroy(gameObject);
+            }
+            return;
+        }
         gameObject.GetComponent<Collider2D>().enabled = !gameObject.GetComponent<Collider2D>().enabled;
         gameObject.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
         ribaNiz.Add(gameObject);
