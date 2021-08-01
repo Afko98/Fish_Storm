@@ -4,7 +4,7 @@ using System.Collections;
 
 public class FollowMouse : MonoBehaviour
 {
-    public static float moveSpeed = 0.004f;
+    public static float moveSpeed = 0.008f;
     public float moveSpeedCam = 0.8f;
     public bool uslov;
     public int brojObicnih, brojStruja, brojUkupnih;
