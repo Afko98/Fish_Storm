@@ -5,6 +5,6 @@ using UnityEngine;
 public class currency : MonoBehaviour
 {
 
-    public static int allCurrency = 78980;
+    public static int allCurrency = 10000;
 
 }

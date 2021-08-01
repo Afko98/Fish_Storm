@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class BuyHook : MonoBehaviour
 {
-    static bool hook1 = false, hook2 = false, hook3 = false,hook4=false,hook5=false,hook6=false;
-    static int hook1p = 5, hook2p = 100, hook3p = 850, hook4p=1000, hook5p=2000,hook6p=4500;
+    public static bool hook1 = false, hook2 = false, hook3 = false,hook4=false,hook5=false,hook6=false;
+    public static int hook1p = 5, hook2p = 100, hook3p = 850, hook4p=1000, hook5p=2000,hook6p=4500;
     public Text v1, v2, v3,v4,v5,v6;
     public GameObject coinupdate;
 

@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class BuyGun : MonoBehaviour
 {
-    static bool sling = false, pistoli = false, pistolii = false,smg=false,pumpy1=false,pumpy2=false,ak=false,nade=false,minigun=false;
-    static int slingp = 5, pistolip = 70, pistoliip = 140,smgp=800,pumpy1p=2200,pumpy2p=4400,akp=5500,nadep=9000,minigunp=13000;
+    public static bool sling = false, pistoli = false, pistolii = false,smg=false,pumpy1=false,pumpy2=false,ak=false,nade=false,minigun=false;
+    public static int slingp = 5, pistolip = 70, pistoliip = 140,smgp=800,pumpy1p=2200,pumpy2p=4400,akp=5500,nadep=9000,minigunp=13000;
     public Text v1, v2, v3,v4,v5,v6,v7,v8,v9;
     public GameObject coinupdate;
 

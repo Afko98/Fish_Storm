@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class buyBait: MonoBehaviour
 {
-    static bool wormi=false , wormii=false , wormiii=false ;
-    static int wormip = 20, wormiip = 300, wormiiip = 1200;
+    public static bool wormi=false , wormii=false , wormiii=false ;
+    public static int wormip = 20, wormiip = 300, wormiiip = 1200;
     public GameObject w1, w2, w3,coinupdate;
 
     private void Start()

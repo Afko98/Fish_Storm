@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class BuyRod : MonoBehaviour
 {
-    static bool rod1 = false, rod2 = false, rod3 = false,rod4=false,rod5=false,rod6=false;
-    static int rod1p = 10, rod2p = 100, rod3p = 850, rod4p=3000, rod5p=8000,rod6p=14000;
+    public static bool rod1 = false, rod2 = false, rod3 = false,rod4=false,rod5=false,rod6=false;
+    public static int rod1p = 10, rod2p = 100, rod3p = 850, rod4p=3000, rod5p=8000,rod6p=14000;
     public Text v1, v2, v3,v4,v5,v6;
     public GameObject coinupdate;
 
