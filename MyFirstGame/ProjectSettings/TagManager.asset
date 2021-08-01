@@ -14,6 +14,9 @@ TagManager:
   - depthBar
   - endScreen
   - bomb
+  - bitePower
+  - bulletPower
+  - boostPower
   layers:
   - Default
   - TransparentFX

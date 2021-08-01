@@ -10,8 +10,8 @@ public class CameraMove : MonoBehaviour
     public float camspeed = 0.8f,camspeed1;
     public static int brojZakacenihRibica=0;
     public bool uslovVracanja = false;
-    public static float uze=455f;
-    public static int brojMaxZakacenihRibica=10;
+    public static float uze=30f;
+    public static int brojMaxZakacenihRibica=100;
     public static int brojMaxZakacenihUIgri;
 
    public void Start()
@@ -34,7 +34,7 @@ public class CameraMove : MonoBehaviour
         if (uslovVracanja)
         {
             PremaGore();
-            camspeed1 = camspeed + 6f;
+            camspeed1 = camspeed + 4.7f;
         }
         else if (!uslovVracanja)
             PremaDole();
@@ -57,12 +57,7 @@ public class CameraMove : MonoBehaviour
             pos1.y += Time.deltaTime * camspeed1;
             transform.position = pos1;
         }
-        else
-        {
-            
-            //aktiviraj dugme za kraj igre - deaktiviraj ga na pocetku uvijek (start(){});
-
-        }
+        
         
         
     }
@@ -71,7 +66,9 @@ public class CameraMove : MonoBehaviour
         Vector3 pos1 = transform.position;
        
       
-            camspeed += Time.deltaTime / 110;
+            camspeed += Time.deltaTime / 90;
+        if (camspeed > 2f)
+            camspeed = 2f;
         pos1.y -= Time.deltaTime * camspeed;
         transform.position = pos1;
 

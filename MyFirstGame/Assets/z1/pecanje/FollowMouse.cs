@@ -30,7 +30,9 @@ public class FollowMouse : MonoBehaviour
        
    
       
-            moveSpeedCam += Time.deltaTime / 110;
+            moveSpeedCam += Time.deltaTime /90;
+        if (moveSpeedCam > 2)
+            moveSpeedCam = 2f;
         
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (cursorPos.y <= 1)
@@ -54,12 +56,13 @@ public class FollowMouse : MonoBehaviour
     void PremaGore()
     {
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (cursorPos.y < 1)
+        if (cursorPos.y < 0)
             yKoordinata = cursorPos.y;
         else
-            yKoordinata = 1;
+            yKoordinata = 0;
         Vector2 mousePosition = new Vector2(cursorPos.x, yKoordinata);
-        transform.position = mousePosition;
+        transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed*5f);
+        transform.position = new Vector3(transform.position.x, transform.position.y + (moveSpeedCam+4.7f) * Time.deltaTime, -350f);
     }
     
 }

@@ -7,18 +7,22 @@ public class pucajRibu : MonoBehaviour
     public static int brojMetaka = 2;
     public static int brM;
     public GameObject krv,krvKlon;
-    public void Start()
+    
+    void Start()
     {
-        brM = brojMetaka;
+        brM = BrojMetaka.brojMetakaUIgri+brojMetaka;
     }
-
+    void Update()
+    {
+        brM = BrojMetaka.brojMetakaUIgri + brojMetaka;
+    }
     private void OnMouseDown()
     {
 
         if (Camera.main.transform.position.y > 2 && brM > 0)
         {
-            Debug.Log(brM);
-            brM-=1;
+
+            BrojMetaka.brojMetakaUIgri--;
             p();
         }
     }
@@ -26,7 +30,7 @@ public class pucajRibu : MonoBehaviour
     public void p()
     {
         Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = 500f;
+        mousePosition.z = 100f;
 
         Vector2 v = Camera.main.ScreenToWorldPoint(mousePosition);
 
