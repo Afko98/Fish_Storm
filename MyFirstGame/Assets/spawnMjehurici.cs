@@ -16,7 +16,10 @@ public class spawnMjehurici : MonoBehaviour
     void Update()
     { 
         Vector3 pos1 = Camera.main.transform.position;
-        
+        foreach(var c in GameObject.FindGameObjectsWithTag("bomb"))
+        {
+            c.transform.position = new Vector2(c.transform.position.x + 0.0008f*Mathf.Cos(p/200f) , c.transform.position.y + 0.0011f * Mathf.Sin(p/400f));
+        }
         foreach (var c in GameObject.FindGameObjectsWithTag("boostPower"))
         {
             c.transform.position = new Vector2(c.transform.position.x + 0.003f * Mathf.Cos(p1 / 550f), c.transform.position.y + 0.001f * Mathf.Sin(p2 / 70f));
@@ -63,9 +66,9 @@ public class spawnMjehurici : MonoBehaviour
             {
                 int k = Random.Range(0, 2);
                 if (k > 0)
-                    stranaKlon = Instantiate(bomba, new Vector2(k * 3.2f - 1.25f, pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), transform.rotation * Quaternion.Euler(0f, 1f * 180f, 0f));
+                    stranaKlon = Instantiate(bomba, new Vector2(k * 3.2f - 1.28f+Random.Range(0f,0.43f), pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), transform.rotation * Quaternion.Euler(0f, 1f * 180f, 0f));
                 else
-                    stranaKlon = Instantiate(bomba, new Vector2(k * 3.2f - 2f , pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), transform.rotation * Quaternion.Euler(0f, 0f * 180f, 0f));
+                    stranaKlon = Instantiate(bomba, new Vector2(k * 3.2f - 2.38f + Random.Range(0f,0.43f), pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), transform.rotation * Quaternion.Euler(0f, 0f * 180f, 0f));
 
             }
             ////////////////////////////////////
