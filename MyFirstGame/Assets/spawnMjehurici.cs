@@ -16,7 +16,15 @@ public class spawnMjehurici : MonoBehaviour
     void Update()
     { 
         Vector3 pos1 = Camera.main.transform.position;
-        foreach(var c in GameObject.FindGameObjectsWithTag("bomb"))
+        foreach (var c in GameObject.FindGameObjectsWithTag("obicna"))
+        {
+            c.transform.position = new Vector3(c.transform.position.x , c.transform.position.y + 0.00035f * Mathf.Sin(p / 180f+ c.transform.position.x+ c.transform.position.y),c.transform.position.z);
+        }
+        foreach (var c in GameObject.FindGameObjectsWithTag("jelly"))
+        {
+            c.transform.position = new Vector3(c.transform.position.x+ 0.0005f * Mathf.Sin(p / 460f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0025f * Mathf.Sin(p / 130f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
+        }
+        foreach (var c in GameObject.FindGameObjectsWithTag("bomb"))
         {
             c.transform.position = new Vector2(c.transform.position.x + 0.0008f*Mathf.Cos(p/200f) , c.transform.position.y + 0.0011f * Mathf.Sin(p/400f));
         }

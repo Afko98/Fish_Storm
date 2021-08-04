@@ -17,6 +17,9 @@ TagManager:
   - bitePower
   - bulletPower
   - boostPower
+  - obicna
+  - struja
+  - jelly
   layers:
   - Default
   - TransparentFX
