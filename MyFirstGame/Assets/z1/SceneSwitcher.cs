@@ -100,36 +100,36 @@ public class SceneSwitcher : MonoBehaviour
     }
     public void startGame()
     {
-
-        SceneManager.LoadScene(2);
+        
+        StartCoroutine(LoadLevel(2));
     }
 
     public void shopGun()
     {
-
-        SceneManager.LoadScene(3);
+        
+        StartCoroutine(LoadLevel(3));
     }
     public void shopMamac()
     {
-
-        SceneManager.LoadScene(4);
+       
+        StartCoroutine(LoadLevel(4));
     }
     
     public void shopKuka()
     {
-
-        SceneManager.LoadScene(5);
+       
+        StartCoroutine(LoadLevel(5));
     }
     public void shopRod()
     {
-
-        SceneManager.LoadScene(6);
+       
+        StartCoroutine(LoadLevel(6));
     }
 
     IEnumerator LoadLevel(int i)
     {
         transition.SetTrigger("Start");
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(i);
     }
 }
