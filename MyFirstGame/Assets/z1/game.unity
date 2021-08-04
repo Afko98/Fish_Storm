@@ -3022,7 +3022,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 25
+=======
+  m_RootOrder: 27
+>>>>>>> parent of 85cbc31 (screen ratio)
 =======
   m_RootOrder: 27
 >>>>>>> parent of 85cbc31 (screen ratio)
