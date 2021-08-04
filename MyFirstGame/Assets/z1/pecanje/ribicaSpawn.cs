@@ -11,6 +11,7 @@ public class ribicaSpawn : MonoBehaviour
     public int brojacObicna = 0,brojacStruja=0;
 
 
+
     private void Start()
     {
 
@@ -41,22 +42,22 @@ public class ribicaSpawn : MonoBehaviour
                 if(pos1.y>-18f)
                 for (int i = 0; i < Random.Range(17f, 42f); i++)
                 {
-                    obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 60f)/6f,-1f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
-                    obicnaKlon.name = "ribaObicna" + brojacObicna;
+                    obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 60f)/6f,-1f),  Quaternion.identity);
+                   
                     brojacObicna++;
                 }
                 else if(pos1.y>-35)
                     for (int i = 0; i < Random.Range(20f, 33f); i++)
                     {
-                        obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f)/10f, pos2.y - 5.12f - Random.Range(0f, 60f) / 6f, -1f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
-                        obicnaKlon.name = "ribaObicna" + brojacObicna;
-                        brojacObicna++;
+                        obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f)/10f, pos2.y - 5.12f - Random.Range(0f, 60f) / 6f, -1f),  Quaternion.identity);
+                  
+                    brojacObicna++;
                     }
                 else 
                 for (int i = 0; i < Random.Range(7f, 20f); i++)
                 {
-                    obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 60f) / 6f, -1f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
-                    obicnaKlon.name = "ribaObicna" + brojacObicna;
+                    obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 60f) / 6f, -1f),   Quaternion.identity);
+                   
                     brojacObicna++;
                 }
 
