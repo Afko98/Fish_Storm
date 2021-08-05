@@ -22,7 +22,15 @@ public class spawnMjehurici : MonoBehaviour
         }
         foreach (var c in GameObject.FindGameObjectsWithTag("jelly"))
         {
-            c.transform.position = new Vector3(c.transform.position.x+ 0.0005f * Mathf.Sin(p / 460f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0025f * Mathf.Sin(p / 130f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
+            c.transform.position = new Vector3(c.transform.position.x+ 0.0009f * Mathf.Sin(p / 490f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0013f * Mathf.Sin(p / 160f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
+        }
+        foreach (var c in GameObject.FindGameObjectsWithTag("ajkula"))
+        {
+            c.transform.position = new Vector3(c.transform.position.x + 0.0007f * Mathf.Sin(p / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0006f * Mathf.Sin(p / 500f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
+        }
+        foreach (var c in GameObject.FindGameObjectsWithTag("struja"))
+        {
+            c.transform.position = new Vector3(c.transform.position.x + 0.0008f * Mathf.Sin(p / 120f + c.transform.position.x + c.transform.position.y), c.transform.position.y, c.transform.position.z);
         }
         foreach (var c in GameObject.FindGameObjectsWithTag("bomb"))
         {

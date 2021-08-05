@@ -66,7 +66,7 @@ public class CameraMove : MonoBehaviour
         Vector3 pos1 = transform.position;
        
       
-            camspeed += Time.deltaTime / 90;
+            camspeed += Time.deltaTime / 120;
         if (camspeed > 2f)
             camspeed = 2f;
         pos1.y -= Time.deltaTime * camspeed;

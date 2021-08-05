@@ -10,5 +10,9 @@ public class coinCityUpdate : MonoBehaviour
         gameObject.GetComponent<Text>().text = "" + currency.allCurrency;
     }
 
+    public void UpdateCoinsCity()
+    {
+        gameObject.GetComponent<Text>().text = "" + currency.allCurrency;
+    }
     
 }

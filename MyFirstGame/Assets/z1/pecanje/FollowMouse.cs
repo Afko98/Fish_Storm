@@ -30,7 +30,7 @@ public class FollowMouse : MonoBehaviour
        
    
       
-            moveSpeedCam += Time.deltaTime /90;
+            moveSpeedCam += Time.deltaTime /120;
         if (moveSpeedCam > 2)
             moveSpeedCam = 2f;
         
