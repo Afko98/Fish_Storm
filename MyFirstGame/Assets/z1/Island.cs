@@ -8,6 +8,7 @@ public class Island : MonoBehaviour
     public Text text;
      public static bool island = false;
     public static int cijenaIslanda = 10000;
+    public GameObject coins;
 
     private void Start()
     {
@@ -24,7 +25,8 @@ public class Island : MonoBehaviour
             cijenaIslanda = 0;
             island = true;
             text.GetComponent<Text>().text = "ISLAND";
+            coins.GetComponent<coinCityUpdate>().UpdateCoinsCity();
+
         }
     }
-
 }
