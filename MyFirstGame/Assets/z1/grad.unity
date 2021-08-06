@@ -446,6 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939b476c804ce84686a2b458c431c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 2023328069}
   text: {fileID: 1886558739}
   coins: {fileID: 886102056}
 --- !u!1 &183696804
@@ -1553,6 +1554,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886558737}
   m_CullTransparentMesh: 1
+--- !u!95 &2023328069 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5023031092019214133, guid: 31fe5f394aa663443b58f7d372349b82,
+    type: 3}
+  m_PrefabInstance: {fileID: 2055344595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2027159186
 GameObject:
   m_ObjectHideFlags: 0

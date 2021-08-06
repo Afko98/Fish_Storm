@@ -125,6 +125,7 @@ public class SceneSwitcher : MonoBehaviour
 
         SceneManager.LoadScene(6);
     }
+    
 
     IEnumerator LoadLevel(int i)
     {
