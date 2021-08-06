@@ -21,6 +21,7 @@ TagManager:
   - struja
   - jelly
   - ajkula
+  - coin
   layers:
   - Default
   - TransparentFX

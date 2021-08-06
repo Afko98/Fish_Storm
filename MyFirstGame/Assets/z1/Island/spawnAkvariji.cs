@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class spawnAkvariji : MonoBehaviour
 {
     public static int brObicna=10, brStruja=10, brJelly=10, brDuga, brAjkula, brZlatna, brZlato, brBomb;
     public GameObject obicna, struja, jelly, duga, ajkula, zlatna, zlato, bomb;
+    
 
     private void Start()
     {
