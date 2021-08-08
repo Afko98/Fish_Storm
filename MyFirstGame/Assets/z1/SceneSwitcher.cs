@@ -125,7 +125,14 @@ public class SceneSwitcher : MonoBehaviour
 
         SceneManager.LoadScene(6);
     }
-    
+    public void island()
+    {
+        StartCoroutine(LoadLevel(7));
+    }
+    public void akvariji()
+    {
+        StartCoroutine(LoadLevel(8));
+    }
 
     IEnumerator LoadLevel(int i)
     {

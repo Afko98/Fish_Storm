@@ -13,5 +13,17 @@ public class kretnjaZlato : MonoBehaviour
         {
             transform.position = new Vector2(transform.position.x, -2.35f);
         }
+        if (transform.position.y > 0.7f)
+        {
+            transform.position = new Vector2(transform.position.x, 0.69f);
+        }
+        if (transform.position.x > 2.4f)
+        {
+            transform.position = new Vector2(2.39f, transform.position.y);
+        }
+        if (transform.position.x < -2.4f)
+        {
+            transform.position = new Vector2(-2.39f, transform.position.y);
+        }
     }
 }
