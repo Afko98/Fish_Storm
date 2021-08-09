@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/z1/akvariji.unity
     guid: 7a3fea315d63bfc4bacac8ddc3d2c67d
+  - enabled: 1
+    path: Assets/z1/shopFish.unity
+    guid: 35902cdb5ce9c8a498396f7336668544
   m_configObjects: {}

@@ -16,7 +16,7 @@ public class Island : MonoBehaviour
     {
         if (island)
         {
-            KupiIsland();
+            text.GetComponent<Text>().text = "ISLAND";
         }
     }
     public void KupiIsland()

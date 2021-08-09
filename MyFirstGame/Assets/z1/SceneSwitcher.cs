@@ -133,6 +133,10 @@ public class SceneSwitcher : MonoBehaviour
     {
         StartCoroutine(LoadLevel(8));
     }
+    public void shopFish()
+    {
+        StartCoroutine(LoadLevel(9));
+    }
 
     IEnumerator LoadLevel(int i)
     {
