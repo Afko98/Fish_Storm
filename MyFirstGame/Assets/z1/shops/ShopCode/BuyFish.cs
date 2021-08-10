@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class BuyFish : MonoBehaviour
 {
     
-    public static int fish1p = 100, fish2p = 100, fish3p = 100, fish4p = 100, fish5p = 100, fish6p = 100,fish7p=100,fish8p=100,fish9p=100;
+    public static int fish1p = 50, fish2p = 50, fish3p = 50, fish4p = 50, fish5p = 50, fish6p = 50,fish7p=50,fish8p=50,fish9p=50;
     public Text v1, v2, v3, v4, v5, v6,v7,v8,v9;
     public GameObject coinupdate;
 
@@ -30,7 +30,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish1p)
         {
             currency.allCurrency -= fish1p;
-            fish1p *= 3;
+            fish1p *= 2;
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -52,7 +52,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish2p)
         {
             currency.allCurrency -= fish2p;
-            fish2p *= 3;
+            fish2p *= 2;
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -95,7 +95,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish4p)
         {
             currency.allCurrency -= fish4p;
-            fish4p *= 4;
+            fish4p *= 3;
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -116,7 +116,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish5p)
         {
             currency.allCurrency -= fish5p;
-            fish5p *= 4;
+            fish5p *= 3;
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -158,7 +158,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish7p)
         {
             currency.allCurrency -= fish7p;
-            fish7p *= 5;
+            fish7p *= 4;
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
