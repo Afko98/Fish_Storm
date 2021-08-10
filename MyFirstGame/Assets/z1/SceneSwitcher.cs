@@ -137,6 +137,26 @@ public class SceneSwitcher : MonoBehaviour
     {
         StartCoroutine(LoadLevel(9));
     }
+    public void ach()
+    {
+        StartCoroutine(LoadLevel(10));
+    }
+    public void achGun()
+    {
+        SceneManager.LoadScene(11);
+    }
+    public void achGuy()
+    {
+        SceneManager.LoadScene(12);
+    }
+    public void achHook()
+    {
+        SceneManager.LoadScene(13);
+    }
+    public void achRod()
+    {
+        SceneManager.LoadScene(14);
+    }
 
     IEnumerator LoadLevel(int i)
     {

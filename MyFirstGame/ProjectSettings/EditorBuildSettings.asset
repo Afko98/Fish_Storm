@@ -35,4 +35,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/z1/shopFish.unity
     guid: 35902cdb5ce9c8a498396f7336668544
+  - enabled: 1
+    path: Assets/z1/ach.unity
+    guid: 632e6bd6c0245f340864dd178b541064
+  - enabled: 1
+    path: Assets/z1/achivGun.unity
+    guid: 5bc0f0ba5cc482b4aa4d6acfda92dd9f
+  - enabled: 1
+    path: Assets/z1/achGuy.unity
+    guid: 1a82c005eccc0484291493a2ae379bc3
+  - enabled: 1
+    path: Assets/z1/achHook.unity
+    guid: 445a1d21259a08748a78bac0883c174b
+  - enabled: 1
+    path: Assets/z1/achRod.unity
+    guid: 43b444b227eb96c4b83b845fa7a59c82
   m_configObjects: {}
