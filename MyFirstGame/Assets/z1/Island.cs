@@ -31,6 +31,7 @@ public class Island : MonoBehaviour
                 StartCoroutine(LoadLevel(7));
             }
             island = true;
+            achivments.buyIsland = true;
             text.GetComponent<Text>().text = "ISLAND";
             coins.GetComponent<coinCityUpdate>().UpdateCoinsCity();
 

@@ -7,6 +7,7 @@ public class uhvatiRibu : MonoBehaviour
     public GameObject kuka,krv,krvKlon;
     public List<GameObject> ribaNiz = new List<GameObject>();
     public static float dmg = 0.7f;
+    public static int bombExploded = 0;
     
    
     public bool daLiJeIspaljena = false;
@@ -29,6 +30,12 @@ public class uhvatiRibu : MonoBehaviour
         
         if (gameObject.tag == "bomb")
         {
+            bombExploded++;
+            if (bombExploded > 49)
+                achivments.explode50 = true;
+            uslovi.bombInOneGame++;
+            if (uslovi.bombInOneGame == 3)
+                achivments.explode3InGame = true;
             for(int i = 0; i < GameObject.FindGameObjectsWithTag("uhvacena").Length / 2 - 0.1f; i++)
             {
                 krvKlon=Instantiate(krv, kuka.transform.position, Quaternion.identity);
@@ -56,7 +63,14 @@ public class uhvatiRibu : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
+        if (gameObject.tag == "zlatna")
+            uslovi.zlatnaInOneGame++;
+        if (uslovi.zlatnaInOneGame == 5)
+            achivments.catch5Goldfish = true;
+        if (gameObject.tag == "chest")
+            uslovi.chestInOneGame++;
+        if (uslovi.chestInOneGame == 3)
+            achivments.catch3GoldChests = true;
 
         gameObject.GetComponent<Collider2D>().enabled = !gameObject.GetComponent<Collider2D>().enabled;
         gameObject.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);

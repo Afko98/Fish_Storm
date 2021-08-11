@@ -833,6 +833,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &193170254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193170256}
+  - component: {fileID: 193170255}
+  m_Layer: 0
+  m_Name: Uslovi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &193170255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193170254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e987e1bdce18fff4f91a224c8ff3614e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &193170256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193170254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.820003, y: 5.6407537, z: -92.80511}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &202226433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 939464984386309325, guid: ecd92b1476d217346a37fec150a7d0bd,
@@ -6907,7 +6950,7 @@ PrefabInstance:
     - target: {fileID: 7195920173577278945, guid: 9106eed568def774aa4a10722e84092d,
         type: 3}
       propertyPath: m_TagString
-      value: obicna
+      value: zlatna
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9106eed568def774aa4a10722e84092d, type: 3}
@@ -6987,6 +7030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: blago_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267567100536251695, guid: 4f125dcbf6264144e9aa636a037bb433,
+        type: 3}
+      propertyPath: m_TagString
+      value: chest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f125dcbf6264144e9aa636a037bb433, type: 3}

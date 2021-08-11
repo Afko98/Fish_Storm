@@ -12,6 +12,12 @@ public class spawnAkvariji : MonoBehaviour
     private void Awake()
     {
         brRibicaUAkvarijumu = brObicna + brStruja + brJelly + brDuga + brAjkula + brZlatna + brZlato + brBomb+brCrvena;
+        if (brRibicaUAkvarijumu > 9)
+            achivments.have10InAq = true;
+        if (brRibicaUAkvarijumu > 19)
+            achivments.have20InAq = true;
+        if (brRibicaUAkvarijumu > 39)
+            achivments.have40InAq = true;
     }
     private void Start()
     {

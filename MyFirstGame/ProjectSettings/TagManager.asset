@@ -22,6 +22,8 @@ TagManager:
   - jelly
   - ajkula
   - coin
+  - zlatna
+  - chest
   layers:
   - Default
   - TransparentFX

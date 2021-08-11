@@ -20,6 +20,10 @@ public class spawnMjehurici : MonoBehaviour
         {
             c.transform.position = new Vector3(c.transform.position.x , c.transform.position.y + 0.00035f * Mathf.Sin(p / 180f+ c.transform.position.x+ c.transform.position.y),c.transform.position.z);
         }
+        foreach (var c in GameObject.FindGameObjectsWithTag("zlatna"))
+        {
+            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.00035f * Mathf.Sin(p / 180f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
+        }
         foreach (var c in GameObject.FindGameObjectsWithTag("jelly"))
         {
             c.transform.position = new Vector3(c.transform.position.x+ 0.0009f * Mathf.Sin(p / 490f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0013f * Mathf.Sin(p / 160f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
