@@ -5,7 +5,7 @@ using System.Collections;
 public class FollowMouse : MonoBehaviour
 {
     public static float moveSpeed = 0.008f;
-    public float moveSpeedCam = 0.8f;
+    
     public bool uslov;
     public int brojObicnih, brojStruja, brojUkupnih;
     public float yKoordinata = 0f;
@@ -17,12 +17,20 @@ public class FollowMouse : MonoBehaviour
 
         if (!uslov)
         {
+        if (CameraMove.boost1 || CameraMove.boost2)
+            GetComponent<CapsuleCollider2D>().enabled = false;
+        else
+            GetComponent<CapsuleCollider2D>().enabled = true;
+
+
             PremaDole();
         }
         else
         {
+            GetComponent<CapsuleCollider2D>().enabled = true;
             PremaGore();
         }
+
         
     }
     void PremaDole()
@@ -30,9 +38,9 @@ public class FollowMouse : MonoBehaviour
        
    
       
-            moveSpeedCam += Time.deltaTime /120;
-        if (moveSpeedCam > 2)
-            moveSpeedCam = 2f;
+            
+        if (CameraMove.camspeed > 2)
+            CameraMove.camspeed = 2f;
         
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (cursorPos.y <= 1)
@@ -47,7 +55,7 @@ public class FollowMouse : MonoBehaviour
         Vector2 mousePosition = new Vector2(cursorPos.x, yKoordinata);
 
         transform.position= Vector2.Lerp(transform.position, mousePosition, moveSpeed);
-        transform.position = new Vector3(transform.position.x, transform.position.y - moveSpeedCam * Time.deltaTime,-350f);
+        transform.position = new Vector3(transform.position.x, transform.position.y - CameraMove.camspeed * Time.deltaTime,-350f);
         if (transform.position.y > Camera.main.transform.position.y + 5f)
             transform.position = new Vector3(transform.position.x, Camera.main.transform.position.y + 5f, -350f);
 
@@ -62,7 +70,7 @@ public class FollowMouse : MonoBehaviour
             yKoordinata = 0;
         Vector2 mousePosition = new Vector2(cursorPos.x, yKoordinata);
         transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed*5f);
-        transform.position = new Vector3(transform.position.x, transform.position.y + (moveSpeedCam+4.7f) * Time.deltaTime, -350f);
+        transform.position = new Vector3(transform.position.x, transform.position.y + (CameraMove.camspeed + 4.7f) * Time.deltaTime, -350f);
     }
     
 }

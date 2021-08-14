@@ -6,6 +6,8 @@ public class uslovi : MonoBehaviour
 {
     public static bool pogodjena;
     public static int killedInOneGame,bombInOneGame,zlatnaInOneGame,chestInOneGame;
+    public static bool firstTimeGame = true;
+    public GameObject tut,startScreen;
 
     private void Start()
     {
@@ -14,5 +16,23 @@ public class uslovi : MonoBehaviour
         bombInOneGame = 0;
         killedInOneGame = 0;
         pogodjena = false;
+
+        if (firstTimeGame)
+        {
+            startScreen.SetActive(false);
+            firstTimeGame = false;
+        }
+        else if (!firstTimeGame)
+            tut.SetActive(false);
+
     }
+
+    public void ugasi()
+    {
+        tut.SetActive(false);
+        startScreen.SetActive(true);
+    }
+
+
+
 }
