@@ -8,9 +8,11 @@ public class uslovi : MonoBehaviour
     public static int killedInOneGame,bombInOneGame,zlatnaInOneGame,chestInOneGame;
     public static bool firstTimeGame = true;
     public GameObject tut,startScreen;
+    public static bool daLiJeIspaljena;
 
     private void Start()
     {
+        daLiJeIspaljena = false;
         chestInOneGame = 0;
         zlatnaInOneGame = 0;
         bombInOneGame = 0;

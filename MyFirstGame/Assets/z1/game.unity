@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 45559ec9b5fda3a4bbd49a47c302c0fd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.87342215, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -332,7 +332,6 @@ MonoBehaviour:
   krv: {fileID: 0}
   krvKlon: {fileID: 0}
   ribaNiz: []
-  daLiJeIspaljena: 0
 --- !u!1 &132835657
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +662,6 @@ MonoBehaviour:
   krv: {fileID: 1430749668}
   krvKlon: {fileID: 0}
   ribaNiz: []
-  daLiJeIspaljena: 0
 --- !u!61 &151434348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -767,7 +765,6 @@ MonoBehaviour:
   krv: {fileID: 1430749668}
   krvKlon: {fileID: 0}
   ribaNiz: []
-  daLiJeIspaljena: 0
 --- !u!212 &176937360
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1305,7 +1302,6 @@ MonoBehaviour:
   krv: {fileID: 0}
   krvKlon: {fileID: 0}
   ribaNiz: []
-  daLiJeIspaljena: 0
 --- !u!1 &273032985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 638492743064138934, guid: 79c188ee5532b5a408fce601f1b0f16e,
@@ -2162,6 +2158,7 @@ GameObject:
   - component: {fileID: 596596394}
   - component: {fileID: 596596398}
   - component: {fileID: 596596399}
+  - component: {fileID: 596596400}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2281,6 +2278,19 @@ MonoBehaviour:
   height: 1280
   onAwake: 1
   onUpdate: 1
+--- !u!114 &596596400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596596393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d790c7c82ef77224b8cb03344bc52fc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ribaNiz: []
 --- !u!1 &598198880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,7 +4467,6 @@ MonoBehaviour:
   krv: {fileID: 1430749668}
   krvKlon: {fileID: 0}
   ribaNiz: []
-  daLiJeIspaljena: 0
 --- !u!61 &1021006636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4947,7 +4956,6 @@ MonoBehaviour:
   krv: {fileID: 1430749668}
   krvKlon: {fileID: 0}
   ribaNiz: []
-  daLiJeIspaljena: 0
 --- !u!1 &1122913420
 GameObject:
   m_ObjectHideFlags: 0
@@ -5396,7 +5404,6 @@ MonoBehaviour:
   krv: {fileID: 0}
   krvKlon: {fileID: 0}
   ribaNiz: []
-  daLiJeIspaljena: 0
 --- !u!1 &1236983345
 GameObject:
   m_ObjectHideFlags: 0
@@ -7009,7 +7016,6 @@ MonoBehaviour:
   krv: {fileID: 1430749668}
   krvKlon: {fileID: 0}
   ribaNiz: []
-  daLiJeIspaljena: 0
 --- !u!61 &1915317405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7650,7 +7656,6 @@ MonoBehaviour:
   krv: {fileID: 1430749668}
   krvKlon: {fileID: 0}
   ribaNiz: []
-  daLiJeIspaljena: 0
 --- !u!95 &2065042543
 Animator:
   serializedVersion: 3

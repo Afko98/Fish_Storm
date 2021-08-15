@@ -11,7 +11,7 @@ public class CameraMove : MonoBehaviour
     public static int brojZakacenihRibica=0;
     public bool uslovVracanja = false;
     public static float uze=100f;
-    public static int brojMaxZakacenihRibica=15;
+    public static int brojMaxZakacenihRibica=50;
     public static int brojMaxZakacenihUIgri;
     public static int totalTravel=0;
     public GameObject startDugme;
@@ -99,7 +99,7 @@ public class CameraMove : MonoBehaviour
         }
         else if(transform.position.y<=11)
         {
-            camspeed1 = 0.75f;
+            camspeed1 = 0.58f;
             Vector3 pos1 = transform.position;
             pos1.y += Time.deltaTime * camspeed1;
             transform.position = pos1;

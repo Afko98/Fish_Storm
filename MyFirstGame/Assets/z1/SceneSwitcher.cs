@@ -111,7 +111,6 @@ public class SceneSwitcher : MonoBehaviour
     }
     public void shopMamac()
     {
-
         SceneManager.LoadScene(4);
     }
     
