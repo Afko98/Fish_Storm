@@ -41,12 +41,12 @@ public class giftScript : MonoBehaviour
             pucajRibu.brojMetaka++;
             for(int i = 0; i < 30; i++)
             {
-               var a = Instantiate(r1,new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-               var b = Instantiate(r2, new Vector3(Random.Range(0f, 600f) / 100f - 3f,-5.2f, 0f), Quaternion.identity);
-               var c = Instantiate(r3, new Vector3(Random.Range(0f, 600f) / 100f - 3f,-5.2f, 0f), Quaternion.identity);
-               var d = Instantiate(r4, new Vector3(Random.Range(0f, 600f) / 100f - 3f,-5.2f, 0f), Quaternion.identity);
-               var e = Instantiate(r5, new Vector3(Random.Range(0f, 600f) / 100f - 3f,-5.2f, 0f), Quaternion.identity);
-               var f = Instantiate(r6, new Vector3(Random.Range(0f, 600f) / 100f - 3f,-5.2f, 0f), Quaternion.identity);
+               var a = Instantiate(r1,new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+               var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f,-5.2f, 0f), Quaternion.identity);
+               var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f,-5.2f, 0f), Quaternion.identity);
+               var d = Instantiate(r4, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f,-5.2f, 0f), Quaternion.identity);
+               var e = Instantiate(r5, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f,-5.2f, 0f), Quaternion.identity);
+               var f = Instantiate(r6, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f,-5.2f, 0f), Quaternion.identity);
 
                 a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
                 a.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f); 
@@ -69,12 +69,12 @@ public class giftScript : MonoBehaviour
             spawnAkvariji.brDiver++;
             for (int i = 0; i < 25; i++)
             {
-                var a = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var b = Instantiate(r2, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var c = Instantiate(r3, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var d = Instantiate(r4, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var e = Instantiate(r5, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var f = Instantiate(r6, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+                var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var d = Instantiate(r4, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var e = Instantiate(r5, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var f = Instantiate(r6, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
 
                 a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
                 a.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
@@ -97,12 +97,12 @@ public class giftScript : MonoBehaviour
             spawnAkvariji.brZlato++;
             for (int i = 0; i < 20; i++)
             {
-                var a = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var b = Instantiate(r2, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var c = Instantiate(r3, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var d = Instantiate(r4, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var e = Instantiate(r5, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var f = Instantiate(r6, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+                var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var d = Instantiate(r4, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var e = Instantiate(r5, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var f = Instantiate(r6, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
 
                 a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
                 a.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
@@ -126,12 +126,12 @@ public class giftScript : MonoBehaviour
             coin.GetComponent<coinCityUpdate>().UpdateCoinsCity();
             for (int i = 0; i < 12; i++)
             {
-                var a = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var b = Instantiate(r2, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var c = Instantiate(r3, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var d = Instantiate(r4, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var e = Instantiate(r5, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var f = Instantiate(r6, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+                var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var d = Instantiate(r4, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var e = Instantiate(r5, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var f = Instantiate(r6, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
 
                 a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
                 a.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
@@ -155,12 +155,12 @@ public class giftScript : MonoBehaviour
             coin.GetComponent<coinCityUpdate>().UpdateCoinsCity();
             for (int i = 0; i < 6; i++)
             {
-                var a = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var b = Instantiate(r2, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var c = Instantiate(r3, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var d = Instantiate(r4, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var e = Instantiate(r5, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var f = Instantiate(r6, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+                var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var d = Instantiate(r4, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var e = Instantiate(r5, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var f = Instantiate(r6, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
 
                 a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
                 a.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
@@ -177,19 +177,19 @@ public class giftScript : MonoBehaviour
 
             }
         }
-        if (randBr >=1.6f && randBr < 3f)
+        if (randBr >=1.6f && randBr < 1.5f)
         {
             w6.SetActive(true);
             currency.allCurrency += 500;
             coin.GetComponent<coinCityUpdate>().UpdateCoinsCity();
             for (int i = 0; i < 3; i++)
             {
-                var a = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var b = Instantiate(r2, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var c = Instantiate(r3, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var d = Instantiate(r4, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var e = Instantiate(r5, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var f = Instantiate(r6, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+                var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var d = Instantiate(r4, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var e = Instantiate(r5, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var f = Instantiate(r6, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
 
                 a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
                 a.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
@@ -206,19 +206,19 @@ public class giftScript : MonoBehaviour
 
             }
         }
-        if (randBr >= 3f && randBr < 7f)
+        if (randBr >= 1.5f && randBr < 7f)
         {
             w7.SetActive(true);
             currency.allCurrency += 200;
             coin.GetComponent<coinCityUpdate>().UpdateCoinsCity();
             for (int i = 0; i < 1; i++)
             {
-                var a = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var b = Instantiate(r2, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var c = Instantiate(r3, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var d = Instantiate(r4, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var e = Instantiate(r5, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-                var f = Instantiate(r6, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+                var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var d = Instantiate(r4, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var e = Instantiate(r5, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var f = Instantiate(r6, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
 
                 a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
                 a.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
@@ -240,11 +240,11 @@ public class giftScript : MonoBehaviour
             w8.SetActive(true);
             currency.allCurrency += 100;
             coin.GetComponent<coinCityUpdate>().UpdateCoinsCity();
-            var a = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-            var b = Instantiate(r2, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-            var c = Instantiate(r3, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-            var d = Instantiate(r4, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-            var e = Instantiate(r5, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+            var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+            var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+            var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+            var d = Instantiate(r4, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+            var e = Instantiate(r5, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
             
 
             a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
@@ -264,9 +264,9 @@ public class giftScript : MonoBehaviour
             w9.SetActive(true);
             currency.allCurrency += 50;
             coin.GetComponent<coinCityUpdate>().UpdateCoinsCity();
-            var a = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-            var b = Instantiate(r2, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
-            var c = Instantiate(r3, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+            var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+            var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+            var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
             
 
             a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
@@ -282,13 +282,13 @@ public class giftScript : MonoBehaviour
             w10.SetActive(true);
             currency.allCurrency += 10;
             coin.GetComponent<coinCityUpdate>().UpdateCoinsCity();
-            var a = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+            var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
             
 
             a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
             a.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
 
-            var k = Instantiate(r1, new Vector3(Random.Range(0f, 600f) / 100f - 3f, -5.2f, 0f), Quaternion.identity);
+            var k = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
 
 
             k.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);

@@ -86,7 +86,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
          
-            uhvatiRibu.dmg = 0.7f*1.1f;
+            uhvatiRibu.dmg = 0.8f*1.1f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -116,7 +116,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
          
-            uhvatiRibu.dmg = 0.7f*1.2f;
+            uhvatiRibu.dmg = 0.8f*1.2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -146,7 +146,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
          
-            uhvatiRibu.dmg = 0.7f*1.4f;
+            uhvatiRibu.dmg = 0.8f*1.4f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -176,7 +176,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
       
-            uhvatiRibu.dmg = 0.7f*1.5f;
+            uhvatiRibu.dmg = 0.8f*1.5f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -206,7 +206,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
         
-            uhvatiRibu.dmg = 0.7f*1.75f;
+            uhvatiRibu.dmg = 0.8f*1.75f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -236,7 +236,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
  
-            uhvatiRibu.dmg = 0.7f*2f;
+            uhvatiRibu.dmg = 0.8f*2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -266,7 +266,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
     
-            uhvatiRibu.dmg = 0.7f*2.3f;
+            uhvatiRibu.dmg = 0.8f*2.3f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -296,7 +296,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "" + minigunp;
 
 
-            uhvatiRibu.dmg = 0.7f*2.7f;
+            uhvatiRibu.dmg = 0.8f*2.7f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -326,7 +326,7 @@ public class BuyGun : MonoBehaviour
             v9.GetComponent<Text>().text = "IN USE";
 
 
-            uhvatiRibu.dmg = 0.7f*3.5f;
+            uhvatiRibu.dmg = 0.8f*3.5f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }

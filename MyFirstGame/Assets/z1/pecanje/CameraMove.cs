@@ -10,17 +10,21 @@ public class CameraMove : MonoBehaviour
     public static float camspeed = 0.9f,camspeed1;
     public static int brojZakacenihRibica=0;
     public bool uslovVracanja = false;
-    public static float uze=100f;
-    public static int brojMaxZakacenihRibica=50;
+    public static float uze=10f;
+    public static int brojMaxZakacenihRibica=5;
     public static int brojMaxZakacenihUIgri;
     public static int totalTravel=0;
     public GameObject startDugme;
-    public static bool boost1 = false,boost2=false;
+    public static bool boost1 = false,boost2=false,boost3=false;
+    float pomocnaSpeed;
+    public GameObject boostPanel;
+    bool uslov11 = false;
 
    public void Start()
     {
         boost1 = false;
         boost2 = false;
+        boost3 = false;
         Time.timeScale = 0;
         brojMaxZakacenihUIgri = brojMaxZakacenihRibica;
     }
@@ -79,7 +83,7 @@ public class CameraMove : MonoBehaviour
         if (uslovVracanja)
         {
             PremaGore();
-            camspeed1 = camspeed + 4.7f;
+            camspeed1 = camspeed + 8.7f;
         }
         else if (!uslovVracanja)
             PremaDole();
@@ -91,7 +95,17 @@ public class CameraMove : MonoBehaviour
 
     public void PremaGore()
     {
-        if (transform.position.y <= 5)
+        boostPanel.SetActive(false);
+
+        if (brojZakacenihRibica < brojMaxZakacenihUIgri)
+        {
+            Vector3 pos1 = transform.position;
+            
+            pos1.y += Time.deltaTime * (camspeed-0.2f);
+            transform.position = pos1;
+        }
+
+        else if (transform.position.y <= 5)
         {
             Vector3 pos1 = transform.position;
             pos1.y += Time.deltaTime * camspeed1;
@@ -133,8 +147,18 @@ public class CameraMove : MonoBehaviour
             }
         }
 
-        if (camspeed > 2f && !boost1 && !boost2)
+        if (camspeed < 2f)
+            pomocnaSpeed = camspeed;
+
+        if(camspeed > 2f && !boost1 && !boost2 && !boost3)
+            camspeed = pomocnaSpeed;
+
+        else if (camspeed > 2f && !boost1 && !boost2 && !boost3)
             camspeed = 2f;
+        if (boost3)
+            camspeed = 5f;
+        
+            
         pos1.y -= Time.deltaTime * camspeed;
         transform.position = pos1;
 

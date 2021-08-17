@@ -8,7 +8,7 @@ public class uhvatiRibu : MonoBehaviour
 {
     public GameObject kuka, krv, krvKlon;
     public List<GameObject> ribaNiz = new List<GameObject>();
-    public static float dmg = 0.7f;
+    public static float dmg = 0.8f;
     public static int bombExploded = 0;
 
   
@@ -76,7 +76,10 @@ public class uhvatiRibu : MonoBehaviour
         if (uslovi.chestInOneGame == 3)
             achivments.catch3GoldChests = true;
 
-        gameObject.GetComponent<Collider2D>().enabled = !gameObject.GetComponent<Collider2D>().enabled;
+        if(Camera.main.transform.position.y<3)
+        if (gameObject.GetComponent<BoxCollider2D>().enabled == true)
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
         gameObject.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
         ribaNiz.Add(gameObject);
 
@@ -91,8 +94,9 @@ public class uhvatiRibu : MonoBehaviour
 
         if (Camera.main.transform.position.y > 4.9f  )
         {
+
+
             uslovi.daLiJeIspaljena = true;
-           
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ispaliRibice>().IspaliRibice();
         }
         if (!uslovi.daLiJeIspaljena && Camera.main.transform.position.y <= 2.7f)

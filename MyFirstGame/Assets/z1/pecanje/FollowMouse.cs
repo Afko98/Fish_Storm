@@ -1,23 +1,38 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
 
 public class FollowMouse : MonoBehaviour
 {
     public static float moveSpeed = 0.008f;
-    
+    public static float boostTime,inGameBoostTime;
     public bool uslov;
     public int brojObicnih, brojStruja, brojUkupnih;
     public float yKoordinata = 0f;
+    public GameObject boostPanel,fuelIcon;
+    public Text tekst;
 
+    private void Start()
+    {
+        inGameBoostTime = boostTime;
+        if (boostTime < 0.01f)
+            fuelIcon.SetActive(false);
+        tekst.GetComponent<Text>().text = "" + (int)(inGameBoostTime * 10);
+
+    }
 
     private void Update()
     {
+        if (inGameBoostTime < 0.01f)
+        {
+            boostPanel.SetActive(false);
+        }
         uslov = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraMove>().uslovVracanja;
 
         if (!uslov)
         {
-        if (CameraMove.boost1 || CameraMove.boost2)
+        if (CameraMove.boost1 || CameraMove.boost2 || CameraMove.brojZakacenihRibica>=CameraMove.brojMaxZakacenihUIgri)
             GetComponent<CapsuleCollider2D>().enabled = false;
         else
             GetComponent<CapsuleCollider2D>().enabled = true;
@@ -35,16 +50,15 @@ public class FollowMouse : MonoBehaviour
     }
     void PremaDole()
     {
-       
-   
-      
+
+
+        
             
-        if (CameraMove.camspeed > 2)
-            CameraMove.camspeed = 2f;
+        
         
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (cursorPos.y <= 1)
-            yKoordinata = cursorPos.y+1.2f;
+            yKoordinata = cursorPos.y+0.2f;
         else
             yKoordinata = 1;
         if (cursorPos.x > 2.5)
@@ -55,9 +69,58 @@ public class FollowMouse : MonoBehaviour
         Vector2 mousePosition = new Vector2(cursorPos.x, yKoordinata);
 
         transform.position= Vector2.Lerp(transform.position, mousePosition, moveSpeed);
-        transform.position = new Vector3(transform.position.x, transform.position.y - CameraMove.camspeed * Time.deltaTime,-350f);
-        if (transform.position.y > Camera.main.transform.position.y + 5f)
-            transform.position = new Vector3(transform.position.x, Camera.main.transform.position.y + 5f, -350f);
+
+        if (transform.position.y > Camera.main.transform.position.y + 3.2f)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y - CameraMove.camspeed * Time.deltaTime, -350f);
+            if (transform.position.y > Camera.main.transform.position.y + 3.2f)
+                transform.position = new Vector2(transform.position.x, Camera.main.transform.position.y + 3.2f);
+            if (!CameraMove.boost1 && !CameraMove.boost2)
+            {
+                gameObject.GetComponent<CapsuleCollider2D>().enabled = (true);
+                CameraMove.boost3 = false;
+            }
+        }
+
+        if (cursorPos.y < Camera.main.transform.position.y - 2.8f)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y - (CameraMove.camspeed - 1f) * Time.deltaTime, -350f);
+            if (transform.position.y < Camera.main.transform.position.y - 2.8f)
+                transform.position = new Vector2(transform.position.x, Camera.main.transform.position.y - 2.8f);
+
+            
+        }
+        if (cursorPos.y > Camera.main.transform.position.y - 3.8f)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y - CameraMove.camspeed * Time.deltaTime,-350f);
+            if (!CameraMove.boost1 && !CameraMove.boost2)
+            {
+                gameObject.GetComponent<CapsuleCollider2D>().enabled = (true);
+                CameraMove.boost3 = false;
+            }
+        }
+
+        Debug.Log(inGameBoostTime);
+
+        if (cursorPos.y < Camera.main.transform.position.y - 3.8f)
+        {
+            if (!CameraMove.boost1 && !CameraMove.boost2 && inGameBoostTime>0f)
+            {
+                inGameBoostTime -= Time.deltaTime;
+                tekst.GetComponent<Text>().text = "" + (int)(inGameBoostTime*10);
+                gameObject.GetComponent<CapsuleCollider2D>().enabled = (false);
+                CameraMove.boost3 = true;
+            }
+            if(inGameBoostTime<=0f)
+            {
+                gameObject.GetComponent<CapsuleCollider2D>().enabled = (true);
+                CameraMove.boost3 = false;
+            }
+            }
+
+
+
+
 
 
     }

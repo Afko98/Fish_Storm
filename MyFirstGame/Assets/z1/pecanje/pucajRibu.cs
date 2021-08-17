@@ -8,6 +8,7 @@ public class pucajRibu : MonoBehaviour
     public static int brM;
     public GameObject krv,krvKlon;
     int brMetakaMax;
+    public GameObject eksplozija;
 
     
     void Start()
@@ -28,6 +29,8 @@ public class pucajRibu : MonoBehaviour
         {
 
             BrojMetaka.brojMetakaUIgri--;
+            var a=Instantiate(eksplozija, Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity) as GameObject;
+            a.transform.position = new Vector3(a.transform.position.x, a.transform.position.y, -3f);
             p();
            
         }

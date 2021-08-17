@@ -26,7 +26,7 @@ public class localMoney : MonoBehaviour
     {
        
         
-        tekst1.GetComponent<Text>().text = "" + localCoins;
+        tekst1.GetComponent<Text>().text = "" + currency.allCurrency;
         tekst2.GetComponent<Text>().text = "" + localCoins;
         brMetakaText.GetComponent<Text>().text = "" + pucajRibu.brM;
         brUhvacenihRibica.GetComponent<Text>().text = ""+ CameraMove.brojZakacenihRibica +"|"+CameraMove.brojMaxZakacenihUIgri;

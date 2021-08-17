@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/z1/achRod.unity
     guid: 43b444b227eb96c4b83b845fa7a59c82
+  - enabled: 1
+    path: Assets/z1/shopBoost.unity
+    guid: 067fa9ca7b9440842aa82d5e9bd25348
   m_configObjects: {}
