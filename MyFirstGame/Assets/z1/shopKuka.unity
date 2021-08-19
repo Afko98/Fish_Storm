@@ -437,7 +437,14 @@ MonoBehaviour:
   v7: {fileID: 0}
   v8: {fileID: 0}
   v9: {fileID: 0}
+  v10: {fileID: 0}
+  v11: {fileID: 0}
+  v12: {fileID: 0}
+  v13: {fileID: 0}
+  v14: {fileID: 0}
+  v15: {fileID: 0}
   coinupdate: {fileID: 0}
+  text: {fileID: 0}
 --- !u!114 &137341402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1376,9 +1383,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 324.66, y: -344.5}
-  m_SizeDelta: {x: 279.42, y: 59.429993}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 317.51, y: -344.5}
+  m_SizeDelta: {x: 293.85, y: 59.43}
+  m_Pivot: {x: 0.50000006, y: 0.5000006}
 --- !u!114 &1452194403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,7 +1433,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0000
+  m_Text: 999999
 --- !u!222 &1452194405
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2495,7 +2502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956840434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -254.92, y: 369.18, z: -12803.773}
+  m_LocalPosition: {x: -273, y: 370, z: -12803.773}
   m_LocalScale: {x: 171.44252, y: 174.37317, z: 142.26414}
   m_Children: []
   m_Father: {fileID: 2062971419}

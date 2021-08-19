@@ -70,9 +70,13 @@ public class FollowMouse : MonoBehaviour
 
         transform.position= Vector2.Lerp(transform.position, mousePosition, moveSpeed);
 
+        
+
         if (transform.position.y > Camera.main.transform.position.y + 3.2f)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - CameraMove.camspeed * Time.deltaTime, -350f);
+            
+
+            transform.position = new Vector3(transform.position.x, transform.position.y - CameraMove.inGameCamSpeed * Time.deltaTime, -350f);
             if (transform.position.y > Camera.main.transform.position.y + 3.2f)
                 transform.position = new Vector2(transform.position.x, Camera.main.transform.position.y + 3.2f);
             if (!CameraMove.boost1 && !CameraMove.boost2)
@@ -84,7 +88,7 @@ public class FollowMouse : MonoBehaviour
 
         if (cursorPos.y < Camera.main.transform.position.y - 2.8f)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - (CameraMove.camspeed - 1f) * Time.deltaTime, -350f);
+            transform.position = new Vector3(transform.position.x, transform.position.y - (CameraMove.inGameCamSpeed - 1f) * Time.deltaTime, -350f);
             if (transform.position.y < Camera.main.transform.position.y - 2.8f)
                 transform.position = new Vector2(transform.position.x, Camera.main.transform.position.y - 2.8f);
 
@@ -92,7 +96,7 @@ public class FollowMouse : MonoBehaviour
         }
         if (cursorPos.y > Camera.main.transform.position.y - 3.8f)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - CameraMove.camspeed * Time.deltaTime,-350f);
+            transform.position = new Vector3(transform.position.x, transform.position.y - CameraMove.inGameCamSpeed * Time.deltaTime,-350f);
             if (!CameraMove.boost1 && !CameraMove.boost2)
             {
                 gameObject.GetComponent<CapsuleCollider2D>().enabled = (true);
@@ -100,7 +104,7 @@ public class FollowMouse : MonoBehaviour
             }
         }
 
-        Debug.Log(inGameBoostTime);
+        
 
         if (cursorPos.y < Camera.main.transform.position.y - 3.8f)
         {
@@ -111,7 +115,7 @@ public class FollowMouse : MonoBehaviour
                 gameObject.GetComponent<CapsuleCollider2D>().enabled = (false);
                 CameraMove.boost3 = true;
             }
-            if(inGameBoostTime<=0f)
+            if(!CameraMove.boost1 && !CameraMove.boost2 && inGameBoostTime <=0f )
             {
                 gameObject.GetComponent<CapsuleCollider2D>().enabled = (true);
                 CameraMove.boost3 = false;
@@ -133,7 +137,10 @@ public class FollowMouse : MonoBehaviour
             yKoordinata = 0;
         Vector2 mousePosition = new Vector2(cursorPos.x, yKoordinata);
         transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed*5f);
-        transform.position = new Vector3(transform.position.x, transform.position.y + (CameraMove.camspeed + 4.7f) * Time.deltaTime, -350f);
+        if (CameraMove.brojZakacenihRibica < CameraMove.brojMaxZakacenihUIgri)
+        transform.position = new Vector3(transform.position.x, transform.position.y + 1.5f * Time.deltaTime, -350f);
+        else
+            transform.position = new Vector3(transform.position.x, transform.position.y + CameraMove.camspeed1 * Time.deltaTime, -350f);
     }
     
 }
