@@ -9,18 +9,29 @@ public class spawnAkvariji : MonoBehaviour
     public GameObject obicna, struja, jelly, duga, ajkula, zlatna, zlato, bomb,crvena,diver,podmornica;
     public static int brRibicaUAkvarijumu;
 
-    private void Awake()
+    static public int VratiBrRibica()
     {
-        brRibicaUAkvarijumu = brObicna + brStruja + brJelly + brDuga + brAjkula + brZlatna + brZlato + brBomb+brCrvena;
+        brRibicaUAkvarijumu = brObicna + brStruja + brJelly + brDuga + brAjkula + brZlatna + brZlato + brBomb + brCrvena + brDiver + brPodmornica;
         if (brRibicaUAkvarijumu > 9)
             achivments.have10InAq = true;
         if (brRibicaUAkvarijumu > 19)
             achivments.have20InAq = true;
         if (brRibicaUAkvarijumu > 39)
             achivments.have40InAq = true;
+
+        return brRibicaUAkvarijumu;
+
     }
+   
     private void Start()
     {
+        brRibicaUAkvarijumu = brObicna + brStruja + brJelly + brDuga + brAjkula + brZlatna + brZlato + brBomb+brCrvena+brDiver+brPodmornica;
+        if (brRibicaUAkvarijumu > 9)
+            achivments.have10InAq = true;
+        if (brRibicaUAkvarijumu > 19)
+            achivments.have20InAq = true;
+        if (brRibicaUAkvarijumu > 39)
+            achivments.have40InAq = true;
         
         for (int i = 0; i < brObicna; i++)
         {

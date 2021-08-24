@@ -7,7 +7,7 @@ public class spawnMjehurici : MonoBehaviour
 
 
     public Vector3 pos2 = Camera.main.transform.position;
-    public GameObject stranaKlon, sredinaKlon, linijaKlon, strana, sredina, linija,bomba,bombaMid,bitePower,boostPower,bulletPower;
+    public GameObject stranaKlon, sredinaKlon, linijaKlon, strana, sredina, linija,bomba,bombaMid,bitePower,bulletPower;
     int p = 0;
     int p1 = 45;
     int p2 = 73;
@@ -19,6 +19,14 @@ public class spawnMjehurici : MonoBehaviour
         foreach (var c in GameObject.FindGameObjectsWithTag("obicna"))
         {
             c.transform.position = new Vector3(c.transform.position.x , c.transform.position.y + 0.00035f * Mathf.Sin(p / 180f+ c.transform.position.x+ c.transform.position.y),c.transform.position.z);
+        }
+        foreach (var c in GameObject.FindGameObjectsWithTag("crvena"))
+        {
+            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.00039f * Mathf.Sin(p / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
+        }
+        foreach (var c in GameObject.FindGameObjectsWithTag("smece"))
+        {
+            c.transform.position = new Vector3(c.transform.position.x + 0.0013f * Mathf.Sin(p / 490f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0002f * Mathf.Sin(p / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
         }
         foreach (var c in GameObject.FindGameObjectsWithTag("zlatna"))
         {
@@ -40,10 +48,7 @@ public class spawnMjehurici : MonoBehaviour
         {
             c.transform.position = new Vector2(c.transform.position.x + 0.0008f*Mathf.Cos(p/200f) , c.transform.position.y + 0.0011f * Mathf.Sin(p/400f));
         }
-        foreach (var c in GameObject.FindGameObjectsWithTag("boostPower"))
-        {
-            c.transform.position = new Vector2(c.transform.position.x + 0.003f * Mathf.Cos(p1 / 550f), c.transform.position.y + 0.001f * Mathf.Sin(p2 / 70f));
-        }
+        
         foreach (var c in GameObject.FindGameObjectsWithTag("bitePower"))
         {
             c.transform.position = new Vector2(c.transform.position.x + 0.0035f * Mathf.Cos(p2 / 520f), c.transform.position.y + 0.001f * Mathf.Sin(p3 / 60f));
@@ -103,21 +108,17 @@ public class spawnMjehurici : MonoBehaviour
             ///
             if (pos1.y < -70f)
             {
-                for (int i = 0; i < Random.Range(-16f, 0.99f); i++)
+                for (int i = 0; i < Random.Range(-15f, 0.99f); i++)
                 {
                     stranaKlon = Instantiate(bitePower, new Vector2(Random.Range(-1f, 1f), pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), Quaternion.identity);
 
                 }
-                for (int i = 0; i < Random.Range(-12f, 0.99f); i++)
+                for (int i = 0; i < Random.Range(-21f, 0.99f); i++)
                 {
                     stranaKlon = Instantiate(bulletPower, new Vector2(Random.Range(-1f, 1f), pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), Quaternion.identity);
 
                 }
-                for (int i = 0; i < Random.Range(-9f, 0.99f); i++)
-                {
-                    stranaKlon = Instantiate(boostPower, new Vector2(Random.Range(-1f, 1f), pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), Quaternion.identity);
-
-                }
+                
             }
             ///////////////////////////////////
 

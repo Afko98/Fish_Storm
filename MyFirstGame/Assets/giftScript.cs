@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class giftScript : MonoBehaviour
 {
-    static int brGift = 3;
+    static public int brGift = 100;
     public GameObject panel, w1,w2, w3, w4, w5, w6, w7, w8, w9, w10,coin,r1,r2,r3,r4,r5,r6;
     float randBr;
     public Text tekst;
