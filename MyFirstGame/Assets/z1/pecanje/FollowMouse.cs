@@ -137,6 +137,8 @@ public class FollowMouse : MonoBehaviour
             yKoordinata = 0;
         Vector2 mousePosition = new Vector2(cursorPos.x, yKoordinata);
         transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed*5f);
+
+        if(Camera.main.transform.position.y<0)
         if (CameraMove.brojZakacenihRibica < CameraMove.brojMaxZakacenihUIgri)
         transform.position = new Vector3(transform.position.x, transform.position.y + 1.5f * Time.deltaTime, -350f);
         else

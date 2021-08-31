@@ -42,8 +42,11 @@ public class ispaliRibice : MonoBehaviour
                     ribaNiz1[i].GetComponent<Rigidbody2D>().gravityScale = 0.3f;
                     ribaNiz1[i].GetComponent<Rigidbody2D>().drag = 0.18f;
                     ribaNiz1[i].GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
+                if(ribaNiz1[i].transform.position.y==-11)
+                    ribaNiz1[i].GetComponent<BoxCollider2D>().size = new Vector2(uhvatiRibu.dmg * 1.28f, uhvatiRibu.dmg * 1.1f);
+                else
                     ribaNiz1[i].GetComponent<BoxCollider2D>().size = new Vector2(uhvatiRibu.dmg, uhvatiRibu.dmg);
-                    uslov1 = true;
+                uslov1 = true;
                 
 
                 }
@@ -57,8 +60,10 @@ public class ispaliRibice : MonoBehaviour
                     ribaNiz2[i].GetComponent<Rigidbody2D>().gravityScale = 0.3f;
                     ribaNiz2[i].GetComponent<Rigidbody2D>().drag = 0.18f;
                     ribaNiz2[i].GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
-                    ribaNiz2[i].GetComponent<BoxCollider2D>().size = new Vector2(uhvatiRibu.dmg, uhvatiRibu.dmg);
-                    uslov2 = true;
+                if (ribaNiz2[i].transform.position.y == -11)
+                    ribaNiz2[i].GetComponent<BoxCollider2D>().size = new Vector2(uhvatiRibu.dmg * 1.28f, uhvatiRibu.dmg * 1.1f);
+                ribaNiz2[i].GetComponent<BoxCollider2D>().size = new Vector2(uhvatiRibu.dmg, uhvatiRibu.dmg);
+                uslov2 = true;
                     
                 
             }
@@ -71,8 +76,11 @@ public class ispaliRibice : MonoBehaviour
                     ribaNiz3[i].GetComponent<Rigidbody2D>().gravityScale = 0.3f;
                     ribaNiz3[i].GetComponent<Rigidbody2D>().drag = 0.18f;
                     ribaNiz3[i].GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
+                if (ribaNiz3[i].transform.position.y == -11)
+                    ribaNiz3[i].GetComponent<BoxCollider2D>().size = new Vector2(uhvatiRibu.dmg * 1.28f, uhvatiRibu.dmg * 1.1f);
+                else
                     ribaNiz3[i].GetComponent<BoxCollider2D>().size = new Vector2(uhvatiRibu.dmg, uhvatiRibu.dmg);
-                    uslov3 = true;
+                uslov3 = true;
                    
                 
             }

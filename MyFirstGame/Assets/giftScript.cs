@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class giftScript : MonoBehaviour
 {
     static public int brGift = 100;
-    public GameObject panel, w1,w2, w3, w4, w5, w6, w7, w8, w9, w10,coin,r1,r2,r3,r4,r5,r6;
+    public GameObject panel, w1,w2, w3, w4, w5, w6, w7, w8, w9, w10,w11,coin,r1,r2,r3,r4,r5,r6;
     float randBr;
     public Text tekst;
     private void Start()
@@ -22,6 +22,7 @@ public class giftScript : MonoBehaviour
         w8.SetActive(false);
         w9.SetActive(false);
         w10.SetActive(false);
+        w11.SetActive(false);
         panel.SetActive(false);
 
       
@@ -91,7 +92,35 @@ public class giftScript : MonoBehaviour
 
             }
         }
-        if (randBr >= 0.3f && randBr < 0.55f)
+        if (randBr >= 0.03f && randBr < 0.55f)
+        {
+            w11.SetActive(true);
+            spawnAkvariji.brPodmornica++;
+            for (int i = 0; i < 25; i++)
+            {
+                var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var c = Instantiate(r3, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var d = Instantiate(r4, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var e = Instantiate(r5, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+                var f = Instantiate(r6, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
+
+                a.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
+                a.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
+                b.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-60f, 100f) / 25f + 5.2f, 0f);
+                b.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
+                c.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-40f, 100f) / 25f + 5.2f, 0f);
+                c.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
+                d.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-50f, 100f) / 25f + 5.2f, 0f);
+                d.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
+                e.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-60f, 100f) / 25f + 5.2f, 0f);
+                e.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
+                f.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(0f, 200f) / 100f - 1f, Random.Range(-40f, 100f) / 25f + 5.2f, 0f);
+                f.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
+
+            }
+        }
+        if (randBr >= 0.55f && randBr < 0.95f)
         {
             w3.SetActive(true);
             spawnAkvariji.brZlato++;
@@ -119,7 +148,7 @@ public class giftScript : MonoBehaviour
 
             }
         }
-        if (randBr >= 0.55f && randBr < 0.85f)
+        if (randBr >= 0.95f && randBr < 1.45f)
         {
             w4.SetActive(true);
             currency.allCurrency += 2000;
@@ -148,7 +177,7 @@ public class giftScript : MonoBehaviour
 
             }
         }
-        if (randBr >= 0.85f && randBr < 1.6f)
+        if (randBr >= 1.45f && randBr < 2.2f)
         {
             w5.SetActive(true);
             currency.allCurrency += 1000;
@@ -177,7 +206,7 @@ public class giftScript : MonoBehaviour
 
             }
         }
-        if (randBr >=1.6f && randBr < 1.5f)
+        if (randBr >=2.2f && randBr < 4.5f)
         {
             w6.SetActive(true);
             currency.allCurrency += 500;
@@ -206,7 +235,7 @@ public class giftScript : MonoBehaviour
 
             }
         }
-        if (randBr >= 1.5f && randBr < 7f)
+        if (randBr >= 4.5f && randBr < 8f)
         {
             w7.SetActive(true);
             currency.allCurrency += 200;
@@ -235,7 +264,7 @@ public class giftScript : MonoBehaviour
 
             }
         }
-        if (randBr >= 7f && randBr < 26f)
+        if (randBr >= 8f && randBr < 26f)
         {
             w8.SetActive(true);
             currency.allCurrency += 100;
@@ -309,6 +338,7 @@ public class giftScript : MonoBehaviour
         w8.SetActive(false);
         w9.SetActive(false);
         w10.SetActive(false);
+        w11.SetActive(false);
         panel.SetActive(false);
     }
     

@@ -4,10 +4,10 @@ using UnityEngine;
 public class ribicaSpawn : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] GameObject ribaObicna, ribaStruja, ribaJelly, ribaRavna,ribaAjkula,ribaZlatna,ribaCrvena,smece;
+    [SerializeField] GameObject ribaObicna, ribaStruja, ribaJelly, ribaRavna,ribaAjkula,ribaZlatna,ribaCrvena,smece,kutija,gift;
 
     public Vector3 pos2 = Camera.main.transform.position;
-    public GameObject obicnaKlon,strujaKlon,jellyKlon,ravnaKlon,ajkulaKlon,blago,blagoKlon,smeceKlon,crvenaKlon;
+    public GameObject obicnaKlon,strujaKlon,jellyKlon,ravnaKlon,ajkulaKlon,blago,blagoKlon,smeceKlon,crvenaKlon,kutijaKlon,giftKlon;
     public int brojacObicna = 0,brojacStruja=0;
 
 
@@ -201,8 +201,33 @@ public class ribicaSpawn : MonoBehaviour
                     ajkulaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
                 }
             }
+            /////////////////////////////////////////
+            if (pos1.y < -10f)
+                for(int i = 0; i < Random.Range(-5f, 1f); i++)
+                {
+                    smeceKlon = Instantiate(smece, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, 0f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
+                    smeceKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
+                }
+            
+            /////////////////////////////////
+
+            if(pos1.y<-20f)
+                for (int i = 0; i < Random.Range(-5f, 1.6f); i++)
+                {
+                    giftKlon = Instantiate(gift, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -11f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
+                    giftKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
+                }
 
             //////////////////////////////////
+            
+            if(pos1.y<-199f)
+                for (int i = 0; i < Random.Range(-13f, 0.9f); i++)
+                {
+                    kutijaKlon = Instantiate(kutija, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -13f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
+                    kutijaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
+                }
+
+            ////////////////
 
             pos2.y-=5.12f;
         }
