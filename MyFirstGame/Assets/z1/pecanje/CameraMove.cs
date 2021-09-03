@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class CameraMove : MonoBehaviour
@@ -19,6 +20,7 @@ public class CameraMove : MonoBehaviour
     static public float pomocnaSpeed,inGameCamSpeed;
     public GameObject boostPanel;
     bool uslov11 = false;
+    public Text text50, text150;
 
    public void Start()
     {
@@ -35,6 +37,7 @@ public class CameraMove : MonoBehaviour
         if (currency.allCurrency >= 50 && !boost1 && !boost2)
         {
             boost1 = true;
+            text50.GetComponent<Text>().text = ":)";
             currency.allCurrency -= 50;
         }
     }
@@ -43,6 +46,7 @@ public class CameraMove : MonoBehaviour
         if (currency.allCurrency >= 250 && !boost1 && !boost2)
         {
             boost2 = true;
+            text150.GetComponent<Text>().text = ":)";
             currency.allCurrency -= 250;
         }
     }
@@ -54,7 +58,7 @@ public class CameraMove : MonoBehaviour
     }
     public void Update()
     {
-        Debug.Log("...." + inGameCamSpeed);
+        
         brojZakacenihRibica = GameObject.FindGameObjectsWithTag("uhvacena").Length;
 
             if (transform.position.y < -49f)
@@ -102,7 +106,7 @@ public class CameraMove : MonoBehaviour
         {
             Vector3 pos1 = transform.position;
             
-            pos1.y += Time.deltaTime * (1.5f);
+            pos1.y += Time.deltaTime * (1.75f);
             transform.position = pos1;
         }
 

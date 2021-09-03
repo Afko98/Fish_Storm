@@ -7,6 +7,7 @@ public class kretnjaRibe : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        if(Camera.main.transform.position.y < 2.1f)
         if(transform.rotation.y==0f)
                 GetComponent<Rigidbody2D>().velocity = new Vector3(0.26f, 0f, 0f);
                 else

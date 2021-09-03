@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ispaliRibice : MonoBehaviour
 {
-    public GameObject[] ribaNiz;
+    public GameObject[] ribaNiz,ribaNizPomocni;
     public List<GameObject> ribaNiz1,ribaNiz2,ribaNiz3;
     bool uslov1 = false,uslov4=false, uslov2 = false, uslov3 = false;
 
@@ -93,17 +93,18 @@ public class ispaliRibice : MonoBehaviour
 
     private void Update()
     {
+        ribaNizPomocni = GameObject.FindGameObjectsWithTag("uhvacena");
         for (int i = 0; i < ribaNiz.Length; i++)
         {
-            if (ribaNiz[i].transform.position.x > 2.6f)
+            if (ribaNizPomocni[i].transform.position.x > 2.6f)
             {
-                ribaNiz[i].GetComponent<Rigidbody2D>().velocity = new Vector3(-ribaNiz[i].GetComponent<Rigidbody2D>().velocity.x, ribaNiz[i].GetComponent<Rigidbody2D>().velocity.y, 0f);
-                ribaNiz[i].transform.position = new Vector3(ribaNiz[i].transform.position.x - 0.15f, ribaNiz[i].transform.position.y, ribaNiz[i].transform.position.z);
+                ribaNizPomocni[i].GetComponent<Rigidbody2D>().velocity = new Vector3(-ribaNizPomocni[i].GetComponent<Rigidbody2D>().velocity.x, ribaNizPomocni[i].GetComponent<Rigidbody2D>().velocity.y, 0f);
+                ribaNizPomocni[i].transform.position = new Vector3(ribaNizPomocni[i].transform.position.x - 0.15f, ribaNizPomocni[i].transform.position.y, ribaNizPomocni[i].transform.position.z);
             }
-            if (ribaNiz[i].transform.position.x < -2.6f)
+            if (ribaNizPomocni[i].transform.position.x < -2.6f)
             {
-                ribaNiz[i].GetComponent<Rigidbody2D>().velocity = new Vector3(-ribaNiz[i].GetComponent<Rigidbody2D>().velocity.x, ribaNiz[i].GetComponent<Rigidbody2D>().velocity.y, 0f);
-                ribaNiz[i].transform.position = new Vector3(ribaNiz[i].transform.position.x + 0.15f, ribaNiz[i].transform.position.y, ribaNiz[i].transform.position.z);
+                ribaNizPomocni[i].GetComponent<Rigidbody2D>().velocity = new Vector3(-ribaNizPomocni[i].GetComponent<Rigidbody2D>().velocity.x, ribaNizPomocni[i].GetComponent<Rigidbody2D>().velocity.y, 0f);
+                ribaNizPomocni[i].transform.position = new Vector3(ribaNizPomocni[i].transform.position.x + 0.15f, ribaNizPomocni[i].transform.position.y, ribaNizPomocni[i].transform.position.z);
             }
         }
     }

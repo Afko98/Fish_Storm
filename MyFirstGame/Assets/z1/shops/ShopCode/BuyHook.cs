@@ -101,6 +101,7 @@ public class BuyHook : MonoBehaviour
         {
             currency.allCurrency -= hook4p;
             hook4p = 0;
+            hook1 = false;
             hook2 = false;
             hook3 = false;
             hook4 = true;
@@ -123,6 +124,7 @@ public class BuyHook : MonoBehaviour
         {
             currency.allCurrency -= hook5p;
             hook5p = 0;
+            hook1 = false;
             hook2 = false;
             hook3 = false;
             hook4 = false;
@@ -145,6 +147,7 @@ public class BuyHook : MonoBehaviour
         {
             currency.allCurrency -= hook6p;
             hook6p = 0;
+            hook1 = false;
             hook2 = false;
             hook3 = false;
             hook4 = false;

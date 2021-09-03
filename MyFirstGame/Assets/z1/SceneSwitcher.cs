@@ -9,6 +9,12 @@ public class SceneSwitcher : MonoBehaviour
 {
     public Animator transition;
     public static bool uslov=false;
+
+    public void DodajLocalCoins()
+    {
+        currency.allCurrency += localMoney.localCoins;
+        giftScript.brGift += uslovi.giftsInGame;
+    }
     public void Menu()
     {
         StartCoroutine(LoadLevel(0));

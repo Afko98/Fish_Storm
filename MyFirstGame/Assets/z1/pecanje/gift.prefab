@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1701417152530007091}
   - component: {fileID: 7234092129060079720}
   - component: {fileID: 6580422188119384856}
-  - component: {fileID: 5985932790052494378}
   m_Layer: 0
   m_Name: gift
   m_TagString: smece
@@ -166,15 +165,3 @@ MonoBehaviour:
   krv: {fileID: 0}
   krvKlon: {fileID: 0}
   ribaNiz: []
---- !u!114 &5985932790052494378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7292586727118673384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e362465e39cf5340bd3f8c647728547, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -12,9 +12,54 @@ public class FollowMouse : MonoBehaviour
     public float yKoordinata = 0f;
     public GameObject boostPanel,fuelIcon;
     public Text tekst;
+    public Sprite kuka1, kuka2, kuka3, kuka4, kuka5, kuka6, kuka7;
 
     private void Start()
     {
+
+
+        if (BuyHook.hook1)
+        {
+            GetComponent<SpriteRenderer>().sprite = kuka2;
+         
+
+        }
+        else if (BuyHook.hook2)
+        {
+            GetComponent<SpriteRenderer>().sprite = kuka3;
+         
+        }
+        else if (BuyHook.hook3)
+        {
+            GetComponent<SpriteRenderer>().sprite = kuka4;
+         
+    
+        }
+        else if (BuyHook.hook4)
+        {
+            GetComponent<SpriteRenderer>().sprite = kuka5;
+         
+        
+        }
+        else if (BuyHook.hook5)
+        {
+            GetComponent<SpriteRenderer>().sprite = kuka6;
+ 
+        }
+        else if (BuyHook.hook6)
+        {
+            GetComponent<SpriteRenderer>().sprite = kuka7;
+         
+        
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = kuka1;
+       
+          
+        }
+
+
         inGameBoostTime = boostTime;
         if (boostTime < 0.01f)
             fuelIcon.SetActive(false);
@@ -42,7 +87,10 @@ public class FollowMouse : MonoBehaviour
         }
         else
         {
-            GetComponent<CapsuleCollider2D>().enabled = true;
+            if(CameraMove.brojZakacenihRibica >= CameraMove.brojMaxZakacenihUIgri)
+            GetComponent<CapsuleCollider2D>().enabled = false;
+            else
+                GetComponent<CapsuleCollider2D>().enabled = true;
             PremaGore();
         }
 
