@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1575135807207346924}
   - component: {fileID: 2374718035374291220}
   - component: {fileID: 8793765942040756121}
-  - component: {fileID: 5449887508941119719}
   - component: {fileID: 1746131066682979731}
+  - component: {fileID: 5353598693178001687}
   m_Layer: 0
   m_Name: igla
   m_TagString: igla
@@ -150,18 +150,6 @@ MonoBehaviour:
   krv: {fileID: 0}
   krvKlon: {fileID: 0}
   ribaNiz: []
---- !u!114 &5449887508941119719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6111017664526484568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e362465e39cf5340bd3f8c647728547, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1746131066682979731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,3 +165,15 @@ MonoBehaviour:
   krv: {fileID: 0}
   krvKlon: {fileID: 0}
   eksplozija: {fileID: 0}
+--- !u!114 &5353598693178001687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6111017664526484568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e25b7646cc54634c9756b8244e12f95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

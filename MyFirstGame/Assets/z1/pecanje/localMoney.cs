@@ -7,6 +7,7 @@ public class localMoney : MonoBehaviour
 {
     static public int localCoins=0;
     public GameObject tekst1;
+    public GameObject textGift;
     public GameObject tekst2;
     public GameObject brMetakaText,brUhvacenihRibica;
     // Start is called before the first frame update
@@ -28,6 +29,7 @@ public class localMoney : MonoBehaviour
         
         tekst1.GetComponent<Text>().text = "" + currency.allCurrency;
         tekst2.GetComponent<Text>().text = "" + localCoins;
+        textGift.GetComponent<Text>().text = "" + uslovi.giftsInGame;
         brMetakaText.GetComponent<Text>().text = "" + pucajRibu.brM;
         brUhvacenihRibica.GetComponent<Text>().text = ""+ CameraMove.brojZakacenihRibica +"|"+CameraMove.brojMaxZakacenihUIgri;
     }

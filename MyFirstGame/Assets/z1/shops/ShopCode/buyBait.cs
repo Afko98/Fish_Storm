@@ -4,68 +4,33 @@ using UnityEngine.UI;
 
 public class buyBait: MonoBehaviour
 {
-    public static bool wormi=false , wormii=false , wormiii=false ;
-    public static int wormip = 20, wormiip = 300, wormiiip = 1200;
-    public GameObject w1, w2, w3,coinupdate;
+
+    public static int baitp = 10;
+    public GameObject tekst;
+    public GameObject v,coinupdate;
 
     private void Start()
     {
-        if (wormi)
-            buyWormI();
-        if (wormii)
-            buyWormII();
-        if (wormiii)
-            buyWormIII();
+        tekst.GetComponent<Text>().text = "ADDS 3 MORE BAITS\n" + "YOU CAN CATCH UP TO " + CameraMove.brojMaxZakacenihRibica + " FISH";
+        v.GetComponent<Text>().text = "" + baitp;
     }
 
     //w1.GetComponent<Text>().text = "IN USE";
-    public void buyWormI()
+    public void buybait()
     {
-            if (currency.allCurrency >= wormip)
-            {
-            currency.allCurrency -= wormip;
-                wormip = 0;
-            wormi = true;
-            wormii = false;
-            wormiii = false;
-            w1.GetComponent<Text>().text = "IN USE";
-            w2.GetComponent<Text>().text = ""+wormiip;
-            w3.GetComponent<Text>().text = ""+wormiiip;
-            CameraMove.brojMaxZakacenihRibica = 10;
-            coinupdate.GetComponent<allcoinsdisplay>().Koliko();
-            }
-        }
-   public void buyWormII()
-    {
-        if (currency.allCurrency >= wormiip)
+        if (currency.allCurrency >= baitp)
         {
-            currency.allCurrency -= wormiip;
-            wormiip = 0;
-            wormi = false;
-            wormii = true;
-            wormiii = false;
-            w1.GetComponent<Text>().text = ""+wormip;
-            w2.GetComponent<Text>().text = "IN USE";
-            w3.GetComponent<Text>().text = ""+wormiiip;
-            CameraMove.brojMaxZakacenihRibica = 15;
+            currency.allCurrency -= baitp;
+            if (baitp < 1000)
+                baitp *= 3;
+            else if (baitp >= 1000 && baitp < 20000)
+                baitp = (int)(baitp * 1.4f);
+            else
+                baitp = (int)(baitp * 1.1f);
+            CameraMove.brojMaxZakacenihRibica+=3;
+            v.GetComponent<Text>().text = "" + baitp;
+            tekst.GetComponent<Text>().text = "ADDS 3 MORE BAITS\n"+"YOU CAN CATCH UP TO "+CameraMove.brojMaxZakacenihRibica+" FISH";
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
-    public void buyWormIII()
-    {
-        if (currency.allCurrency >= wormiiip)
-        {
-            currency.allCurrency -= wormiiip;
-            wormiiip = 0;
-            wormi = false;
-            wormii = false;
-            wormiii = true;
-            w1.GetComponent<Text>().text = ""+wormip;
-            w2.GetComponent<Text>().text = ""+wormiip;
-            w3.GetComponent<Text>().text = "IN USE";
-            CameraMove.brojMaxZakacenihRibica = 20;
-            coinupdate.GetComponent<allcoinsdisplay>().Koliko();
-        }
-    }
-
 }

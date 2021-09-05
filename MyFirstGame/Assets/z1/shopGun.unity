@@ -159,7 +159,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 3.5X DMG AREA
+      value: 2.9X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -447,7 +447,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 1.4X DMG AREA
+      value: 1.5X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1596,7 +1596,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 3.5X DMG AREA
+      value: 3.2X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1801,7 +1801,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 3.5X DMG AREA
+      value: 3.8X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2030,7 +2030,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 2.7X DMG AREA
+      value: 2.6X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2410,7 +2410,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 1.5X DMG AREA
+      value: 1.6X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655889406675, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -3200,7 +3200,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 2.3X DMG AREA
+      value: 2.2X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -4802,7 +4802,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 2.3X DMG AREA
+      value: 2.4X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}

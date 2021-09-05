@@ -76,13 +76,7 @@ public class SceneSwitcher : MonoBehaviour
             BuyGun.nadep = data.nadep;
             BuyGun.minigunp = data.minigunp;
 
-            buyBait.wormi = data.wormi;
-            buyBait.wormii = data.wormii;
-            buyBait.wormiii = data.wormiii;
-
-            buyBait.wormip = data.wormip;
-            buyBait.wormiip = data.wormiip;
-            buyBait.wormiiip = data.wormiiip;
+           
 
             CameraMove.brojMaxZakacenihRibica = data.brojMaxZakacenihRibica;
             CameraMove.uze = data.uze;

@@ -26,7 +26,7 @@ public class spawnMjehurici : MonoBehaviour
         }
         foreach (var c in GameObject.FindGameObjectsWithTag("smece"))
         {
-            c.transform.position = new Vector3(c.transform.position.x , c.transform.position.y + 0.007f * Mathf.Sin(p / 300f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
+            c.transform.position = new Vector3(c.transform.position.x , c.transform.position.y + 0.002f * Mathf.Sin(p / 300f), c.transform.position.z);
         }
         foreach (var c in GameObject.FindGameObjectsWithTag("zlatna"))
         {
@@ -39,6 +39,10 @@ public class spawnMjehurici : MonoBehaviour
         foreach (var c in GameObject.FindGameObjectsWithTag("ajkula"))
         {
             c.transform.position = new Vector3(c.transform.position.x + 0.0007f * Mathf.Sin(p / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0006f * Mathf.Sin(p / 500f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
+        }
+        foreach (var c in GameObject.FindGameObjectsWithTag("igla"))
+        {
+            c.transform.position = new Vector3(c.transform.position.x + 0.0007f * Mathf.Sin(p / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0012f * Mathf.Sin(p1 / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
         }
         foreach (var c in GameObject.FindGameObjectsWithTag("struja"))
         {
@@ -55,12 +59,12 @@ public class spawnMjehurici : MonoBehaviour
         }
         foreach (var c in GameObject.FindGameObjectsWithTag("crate"))
         {
-            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.006f * Mathf.Sin(p / 400f), c.transform.position.z);
+            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.002f * Mathf.Sin(p1 / 350f ), c.transform.position.z);
             c.transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(p / (300 - c.transform.position.y)) * 14f);
         }
         foreach (var c in GameObject.FindGameObjectsWithTag("gift"))
         {
-            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.0010f * Mathf.Sin(p / 30f), c.transform.position.z);
+            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.004f *c.transform.position.x/100f* Mathf.Sin(p1 / 300f), c.transform.position.z);
             c.transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(p / (300 - c.transform.position.y)) * 14f);
         }
         foreach (var c in GameObject.FindGameObjectsWithTag("bitePower"))
@@ -101,7 +105,7 @@ public class spawnMjehurici : MonoBehaviour
             }
             ////////////////////////////////////
             ///
-            for (int i = 0; i < Random.Range(-6f, 2f); i++)
+            for (int i = 0; i < Random.Range(-5f, 2f); i++)
             {
                 int k = Random.Range(0, 2);
                 if (k > 0)
@@ -112,7 +116,7 @@ public class spawnMjehurici : MonoBehaviour
             }
             ////////////////////////////////////
             ///
-            if(pos1.y<-160f)
+            if(pos1.y<-130f)
             for (int i = 0; i < Random.Range(-6f, 2f); i++)
             {
                     stranaKlon = Instantiate(bombaMid, new Vector2(Random.Range(-2.7f, 2.5f), pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), Quaternion.identity);

@@ -33,6 +33,8 @@ TagManager:
   - nemo
   - ribicaSpawn
   - crate
+  - music
+  - musicDugme
   layers:
   - Default
   - TransparentFX

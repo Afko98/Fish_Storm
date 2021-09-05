@@ -510,7 +510,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 2000
+      value: 27000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -627,6 +627,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: template (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: HOOK V
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -700,7 +705,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 1000
+      value: 14000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -816,6 +821,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: template (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: HOOK IV
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1483,7 +1493,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1603,7 +1613,7 @@ PrefabInstance:
     - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: GUN I
+      value: HOOK II
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1785,9 +1795,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: '850
-
-'
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -1907,7 +1915,7 @@ PrefabInstance:
     - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: GUN II
+      value: HOOK III
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2315,9 +2323,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: '4500
-
-'
+      value: 55000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2433,6 +2439,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: template (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: HOOK VI
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2699,6 +2710,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: 1.2x hook speed
       objectReference: {fileID: 0}
+    - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2813,6 +2829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: template
+      objectReference: {fileID: 0}
+    - target: {fileID: 8932819657221574936, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
+        type: 3}
+      propertyPath: m_Text
+      value: HOOK I
       objectReference: {fileID: 0}
     - target: {fileID: 8932819657359976019, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}

@@ -114,7 +114,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 100;
-            uhvatiRibu.dmg = 0.8f * 1.1f;
+            uhvatiRibu.dmg = 0.8f * 1.5f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -128,12 +128,12 @@ public class BuyGun : MonoBehaviour
             sling = false;
             pistoli = false;
             pistolii = false;
-            uzi = true;
+            uzi = false;
             smg = false;
             pumpy1 = false;
             pumpy2 = false;
             ak = false;
-            sniper = false;
+            sniper = true;
             nade = false;
             nadeLauncher = false;
             minigun = false;
@@ -156,7 +156,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 75;
-            uhvatiRibu.dmg = 0.8f * 1.1f;
+            uhvatiRibu.dmg = 0.8f * 2.4f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -198,7 +198,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 60;
-            uhvatiRibu.dmg = 0.8f * 1.1f;
+            uhvatiRibu.dmg = 0.8f * 3.2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -219,7 +219,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = true;
             rpgii = false;
@@ -239,8 +239,8 @@ public class BuyGun : MonoBehaviour
             v14.GetComponent<Text>().text = "IN USE";
             v15.GetComponent<Text>().text = "" + rpgiip;
 
-            ShakeCam.shakePower = 55;
-            uhvatiRibu.dmg = 0.8f * 1.1f;
+            ShakeCam.shakePower = 50;
+            uhvatiRibu.dmg = 0.8f * 3.5f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -261,7 +261,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = false;
             rpgii = true;
@@ -281,7 +281,7 @@ public class BuyGun : MonoBehaviour
             v14.GetComponent<Text>().text = ""+rpgp;
             v15.GetComponent<Text>().text = "IN USE";
             ShakeCam.shakePower = 50;
-            uhvatiRibu.dmg = 0.8f * 1.1f;
+            uhvatiRibu.dmg = 0.8f * 3.8f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -301,7 +301,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = false;
             rpgii = false;
@@ -320,7 +320,7 @@ public class BuyGun : MonoBehaviour
             v14.GetComponent<Text>().text = "" + rpgp;
             v15.GetComponent<Text>().text = "" + rpgiip;
 
-            ShakeCam.shakePower = 130;
+            ShakeCam.shakePower = 120;
             uhvatiRibu.dmg = 0.8f*1.1f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -341,7 +341,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = false;
             rpgii = false;
@@ -360,7 +360,7 @@ public class BuyGun : MonoBehaviour
             v14.GetComponent<Text>().text = "" + rpgp;
             v15.GetComponent<Text>().text = "" + rpgiip;
 
-            ShakeCam.shakePower = 125;
+            ShakeCam.shakePower = 110;
             uhvatiRibu.dmg = 0.8f*1.2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -381,7 +381,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = false;
             rpgii = false;
@@ -400,7 +400,7 @@ public class BuyGun : MonoBehaviour
             v14.GetComponent<Text>().text = "" + rpgp;
             v15.GetComponent<Text>().text = "" + rpgiip;
 
-            ShakeCam.shakePower = 120;
+            ShakeCam.shakePower = 105;
             uhvatiRibu.dmg = 0.8f*1.4f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -421,7 +421,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = false;
             rpgii = false;
@@ -441,7 +441,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 110;
-            uhvatiRibu.dmg = 0.8f*1.5f;
+            uhvatiRibu.dmg = 0.8f*1.6f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -461,7 +461,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = false;
             rpgii = false;
@@ -480,7 +480,7 @@ public class BuyGun : MonoBehaviour
             v14.GetComponent<Text>().text = "" + rpgp;
             v15.GetComponent<Text>().text = "" + rpgiip;
 
-            ShakeCam.shakePower = 100;
+            ShakeCam.shakePower = 90;
             uhvatiRibu.dmg = 0.8f*1.75f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -501,7 +501,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = false;
             rpgii = false;
@@ -520,7 +520,7 @@ public class BuyGun : MonoBehaviour
             v14.GetComponent<Text>().text = "" + rpgp;
             v15.GetComponent<Text>().text = "" + rpgiip;
 
-            ShakeCam.shakePower = 100;
+            ShakeCam.shakePower = 80;
             uhvatiRibu.dmg = 0.8f*2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -541,7 +541,7 @@ public class BuyGun : MonoBehaviour
             ak = true;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = false;
             rpgii = false;
@@ -561,7 +561,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 90;
-            uhvatiRibu.dmg = 0.8f*2.3f;
+            uhvatiRibu.dmg = 0.8f*2.2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -581,7 +581,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = true;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = false;
             rpg = false;
             rpgii = false;
@@ -600,8 +600,8 @@ public class BuyGun : MonoBehaviour
             v14.GetComponent<Text>().text = "" + rpgp;
             v15.GetComponent<Text>().text = "" + rpgiip;
 
-            ShakeCam.shakePower = 80;
-            uhvatiRibu.dmg = 0.8f*2.7f;
+            ShakeCam.shakePower = 70;
+            uhvatiRibu.dmg = 0.8f*2.9f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -621,7 +621,7 @@ public class BuyGun : MonoBehaviour
             ak = false;
             sniper = false;
             nade = false;
-            nadeLauncher = true;
+            nadeLauncher = false;
             minigun = true;
             rpg = false;
             rpgii = false;
@@ -641,7 +641,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 80;
-            uhvatiRibu.dmg = 0.8f*3.5f;
+            uhvatiRibu.dmg = 0.8f*2.6f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }

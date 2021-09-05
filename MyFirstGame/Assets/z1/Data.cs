@@ -77,13 +77,9 @@ public class Data
         nadep = BuyGun.nadep;
         minigunp = BuyGun.minigunp;
 
-        wormi = buyBait.wormi;
-        wormii = buyBait.wormii;
-        wormiii = buyBait.wormiii;
+        
 
-        wormip = buyBait.wormip;
-        wormiip = buyBait.wormiip;
-        wormiiip = buyBait.wormiiip;
+        
 
         brojMaxZakacenihRibica = CameraMove.brojMaxZakacenihRibica;
         uze = CameraMove.uze;
