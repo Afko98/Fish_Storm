@@ -88,7 +88,7 @@ public class CameraMove : MonoBehaviour
         if (uslovVracanja)
         {
             PremaGore();
-            camspeed1 = inGameCamSpeed + 13.7f;
+            camspeed1 = inGameCamSpeed + 15.7f;
         }
         else if (!uslovVracanja)
             PremaDole();
@@ -110,15 +110,15 @@ public class CameraMove : MonoBehaviour
             transform.position = pos1;
         }
 
-        else if (transform.position.y <= 5)
+        else if (transform.position.y <= 7f)
         {
             Vector3 pos1 = transform.position;
             pos1.y += Time.deltaTime * camspeed1;
             transform.position = pos1;
         }
-        else if(transform.position.y<=10.7f)
+        else if(transform.position.y<=10f)
         {
-            camspeed1 = 0.9f;
+            camspeed1 = 0.6f;
             Vector3 pos1 = transform.position;
             pos1.y += Time.deltaTime * camspeed1;
             transform.position = pos1;

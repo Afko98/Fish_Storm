@@ -10,14 +10,19 @@ public class coinSystem : MonoBehaviour
     public GameObject coin,obj,coinUpdate;
     public static int coinsOnScreen=0;
     TimeSpan petMin = new TimeSpan(0, 20, 0);
+    TimeSpan petsek = new TimeSpan(0, 0, 2);
     TimeSpan maxVrijeme = new TimeSpan(12, 0, 0);
     public static DateTime startTime=DateTime.UtcNow;
+    public static DateTime petSekStart=DateTime.UtcNow;
 
-    
+
 
     private void Update()
     {
-        
+        if (DateTime.UtcNow-petSekStart>petsek){
+            SaveSystem.SavePlayer();
+            petSekStart = DateTime.UtcNow;
+        }
         if (coinsOnScreen >= maxVrijeme.TotalSeconds / petMin.TotalSeconds * spawnAkvariji.brRibicaUAkvarijumu)
             startTime = DateTime.UtcNow;
 

@@ -35,6 +35,7 @@ TagManager:
   - crate
   - music
   - musicDugme
+  - soundEff
   layers:
   - Default
   - TransparentFX

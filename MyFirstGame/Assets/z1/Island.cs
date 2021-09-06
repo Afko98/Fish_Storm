@@ -9,7 +9,7 @@ public class Island : MonoBehaviour
     public Animator transition;
     public Text text;
     public static bool island = false;
-    public static int cijenaIslanda = 10000;
+    public static int cijenaIslanda = 5000;
     public GameObject coins;
 
     private void Start()

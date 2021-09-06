@@ -6,25 +6,33 @@ using UnityEngine.UI;
 public class volumeScript : MonoBehaviour
 {
    public Sprite son, soff;
-    GameObject music;
+    static GameObject music;
     public GameObject musicDugme;
+    static bool a = true;
     private void Start()
     {
         music = GameObject.FindGameObjectWithTag("music");
+        if(a)
+            musicDugme.GetComponent<Image>().sprite = son;
+        else
+            musicDugme.GetComponent<Image>().sprite = soff;
     }
     public void IskljuciMuziku()
     {
-        if (music.activeSelf)
+        if (a)
         {
             musicDugme.GetComponent<Image>().sprite = soff;
-            music.SetActive(false);
-            
+            foreach (AudioSource x in music.GetComponents<AudioSource>())
+                x.volume = 0.001f;
+            a = false;
+
         }
-        else if (!music.activeSelf)
-        { 
+        else if (!a)
+        {
             musicDugme.GetComponent<Image>().sprite = son;
-            music.SetActive(true);
-           
+            foreach (AudioSource x in music.GetComponents<AudioSource>())
+                x.volume = 1f;
+            a = true;
         }
     }
 }

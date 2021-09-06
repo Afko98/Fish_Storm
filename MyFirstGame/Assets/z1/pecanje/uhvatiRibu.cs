@@ -34,6 +34,7 @@ public class uhvatiRibu : MonoBehaviour
 
         if (gameObject.tag == "bomb")
         {
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayBombExsplosion();
             bombExploded++;
             if (bombExploded > 49)
                 achivments.explode50 = true;
@@ -92,7 +93,7 @@ public class uhvatiRibu : MonoBehaviour
     {
 
 
-        if (Camera.main.transform.position.y > 4.9f  )
+        if (Camera.main.transform.position.y > 6.9f  )
         {
 
 

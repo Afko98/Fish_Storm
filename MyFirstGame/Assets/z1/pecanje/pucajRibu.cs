@@ -36,6 +36,7 @@ public class pucajRibu : MonoBehaviour
             a.transform.position = new Vector3(a.transform.position.x, a.transform.position.y, -3f);
             ShakeCam.shakeTime=0.5f;
             uslovi.shake = true;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayShoot();
             p();
            
         }

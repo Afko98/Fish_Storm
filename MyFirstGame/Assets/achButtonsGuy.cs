@@ -53,7 +53,7 @@ public class achButtonsGuy : MonoBehaviour
     {
         if (achivments.watch20 && !d3)
         {
-            giftScript.brGift += 400;
+            giftScript.brGift += 500;
             v3.GetComponent<Text>().text = "DONE";
             d3 = true;
             coinUpdate.GetComponent<allcoinsdisplay>().Koliko();

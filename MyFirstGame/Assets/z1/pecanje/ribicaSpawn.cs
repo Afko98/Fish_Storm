@@ -155,7 +155,7 @@ public class ribicaSpawn : MonoBehaviour
                 }
             }
             ///////////////////////////////////////////////////////////////   struja
-            if (pos1.y < -30f && pos1.y>-65f)
+            if (pos1.y < -25f && pos1.y>-55f)
             {
                 for (int i = 0; i < Random.Range(4f, 11f); i++)
                 {
@@ -164,7 +164,7 @@ public class ribicaSpawn : MonoBehaviour
                    
                 }
             }
-            else if ((pos1.y <= -65 && pos1.y>-95)|| (pos1.y < -20 && pos1.y >= -30))
+            else if ((pos1.y <= -55 && pos1.y>-95)|| (pos1.y < -20 && pos1.y >= -30))
             {
                 for (int i = 0; i < Random.Range(1f, 6f); i++)
                 {
@@ -183,7 +183,7 @@ public class ribicaSpawn : MonoBehaviour
                 }
             /////////////////////////// nemo
 
-            if (pos1.y < -60f && pos1.y > -100f)
+            if (pos1.y < -38f && pos1.y > -90f)
             {
                 for (int i = 0; i < Random.Range(-1f, 4f); i++)
                 {
@@ -192,7 +192,7 @@ public class ribicaSpawn : MonoBehaviour
 
                 }
             }
-            else if(pos1.y<=-100f)
+            else if(pos1.y<=-90f)
                 for (int i = 0; i < Random.Range(-3f, 2f); i++)
                 {
                     strujaKlon = Instantiate(ribaNemo, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -8f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;

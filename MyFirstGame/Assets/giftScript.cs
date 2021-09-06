@@ -35,6 +35,7 @@ public class giftScript : MonoBehaviour
     }
     public void panelUp()
     {
+        GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayGiftOpen();
         letsFish.GetComponent<Text>().text = "";
         if (brGift < 1)
             return;
@@ -48,7 +49,8 @@ public class giftScript : MonoBehaviour
         {
             w1.SetActive(true);
             pucajRibu.brojMetaka++;
-            for(int i = 0; i < 30; i++)
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
+            for (int i = 0; i < 30; i++)
             {
                var a = Instantiate(r1,new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
                var b = Instantiate(r2, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f,-5.2f, 0f), Quaternion.identity);
@@ -76,6 +78,7 @@ public class giftScript : MonoBehaviour
         {
             w2.SetActive(true);
             spawnAkvariji.brDiver++;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
             for (int i = 0; i < 25; i++)
             {
                 var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
@@ -104,6 +107,7 @@ public class giftScript : MonoBehaviour
         {
             w12.SetActive(true);
             spawnAkvariji.brBob++;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
             for (int i = 0; i < 25; i++)
             {
                 var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
@@ -132,6 +136,7 @@ public class giftScript : MonoBehaviour
         {
             w13.SetActive(true);
             spawnAkvariji.brPatrik++;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
             for (int i = 0; i < 25; i++)
             {
                 var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
@@ -160,6 +165,7 @@ public class giftScript : MonoBehaviour
         {
             w14.SetActive(true);
             spawnAkvariji.brIgla++;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
             for (int i = 0; i < 25; i++)
             {
                 var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
@@ -188,6 +194,7 @@ public class giftScript : MonoBehaviour
         {
             w15.SetActive(true);
             spawnAkvariji.brObicnaZelena++;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
             for (int i = 0; i < 25; i++)
             {
                 var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
@@ -216,6 +223,7 @@ public class giftScript : MonoBehaviour
         {
             w16.SetActive(true);
             spawnAkvariji.brNemo++;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
             for (int i = 0; i < 25; i++)
             {
                 var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
@@ -244,6 +252,7 @@ public class giftScript : MonoBehaviour
         {
             w11.SetActive(true);
             spawnAkvariji.brPodmornica++;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
             for (int i = 0; i < 25; i++)
             {
                 var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
@@ -272,6 +281,7 @@ public class giftScript : MonoBehaviour
         {
             w3.SetActive(true);
             spawnAkvariji.brZlato++;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
             for (int i = 0; i < 20; i++)
             {
                 var a = Instantiate(r1, new Vector3(Random.Range(0f, 300f) / 100f - 1.5f, -5.2f, 0f), Quaternion.identity);
@@ -300,6 +310,7 @@ public class giftScript : MonoBehaviour
         {
             w4.SetActive(true);
             currency.allCurrency += 2000;
+            GameObject.FindGameObjectWithTag("soundEff").GetComponent<soundEffScript>().PlayUnique();
             coin.GetComponent<coinCityUpdate>().UpdateCoinsCity();
             for (int i = 0; i < 12; i++)
             {
