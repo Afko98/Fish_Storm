@@ -27,13 +27,13 @@ public class kretnjaRibeBrzeMalo : MonoBehaviour
             {
                 transform.rotation = transform.rotation * Quaternion.Euler(0f, -180f, 0f);
                 transform.position = new Vector3(-2.9f, transform.position.y, transform.position.z);
-                GetComponent<Rigidbody2D>().velocity = new Vector3(0.65f, 0f, 0f);
+                GetComponent<Rigidbody2D>().velocity = new Vector3(0.65f, GetComponent<Rigidbody2D>().velocity.y, 0f);
             }
             if (transform.position.x > 3f)
             {
                 transform.rotation = transform.rotation * Quaternion.Euler(0f, 180f, 0f);
                 transform.position = new Vector3(2.9f, transform.position.y, transform.position.z);
-                GetComponent<Rigidbody2D>().velocity = new Vector3(-0.65f, 0f, 0f);
+                GetComponent<Rigidbody2D>().velocity = new Vector3(-0.65f, GetComponent<Rigidbody2D>().velocity.y, 0f);
             }
         }
     }

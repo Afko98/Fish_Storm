@@ -86,17 +86,12 @@ public class ribicaSpawn : MonoBehaviour
     private void Start()
     {
 
-        float i = Random.Range(-7f, 3.2f);
-        if(i>=3)
-            blagoKlon = Instantiate(blago, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 150f - Random.Range(0f, 40f), -200f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
-           if(i>=2)
-        blagoKlon = Instantiate(blago, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 190f - Random.Range(0f, 40f), -200f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
-        if(i>=1)
-        blagoKlon = Instantiate(blago, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 250f - Random.Range(0f, 40f), -200f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
         
         obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 1.12f - Random.Range(0f, 4f),-2f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
-        obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 1.12f - Random.Range(0f, 4f),-2f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
-        obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 1.12f - Random.Range(0f, 4f),-2f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
+        obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 2.12f - Random.Range(0f, 4f),-2f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
+        obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 3.12f - Random.Range(0f, 4f),-2f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
+        obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 4.12f - Random.Range(0f, 4f),-2f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
+        obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-2.40f, 2.40f), pos2.y - 3.52f - Random.Range(0f, 4f),-2f), transform.rotation * Quaternion.Euler(0f, 0f, 0f)) as GameObject;
     
 
     }
@@ -111,7 +106,7 @@ public class ribicaSpawn : MonoBehaviour
         {
             
                 if(pos1.y>-18f && pos1.y<-1f)
-                for (int i = 0; i < Random.Range(5f, 14f); i++)
+                for (int i = 0; i < Random.Range(4f, 10f); i++)
                 {
                     obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f)/7f,-2f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
               
@@ -119,7 +114,7 @@ public class ribicaSpawn : MonoBehaviour
                 
                 }
                 else if(pos1.y>-35f && pos1.y <= -18f)
-                    for (int i = 0; i < Random.Range(1f, 10f); i++)
+                    for (int i = 0; i < Random.Range(1f, 8f); i++)
                     {
                         obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f)/10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -2f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                 
@@ -137,7 +132,7 @@ public class ribicaSpawn : MonoBehaviour
             ///////////////////////// obicnaZelena
             if (pos1.y > -20f && pos1.y < -1f)
             {
-                for (int i = 0; i < Random.Range(4f, 11f); i++)
+                for (int i = 0; i < Random.Range(4f, 8f); i++)
                 {
                     strujaKlon = Instantiate(ribaObicnaZelena, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -2f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
 
@@ -155,10 +150,19 @@ public class ribicaSpawn : MonoBehaviour
                    
                 }
             }
+            ////
+            if (pos1.y < -180f)
+            {
+                for(int i = 0; i < Random.Range(-18f, 1f); i++)
+                {
+                    blagoKlon = Instantiate(blago, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f)/7f, -200f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
+
+                }
+            }
             ///////////////////////////////////////////////////////////////   struja
             if (pos1.y < -25f && pos1.y>-55f)
             {
-                for (int i = 0; i < Random.Range(4f, 11f); i++)
+                for (int i = 0; i < Random.Range(3f, 10f); i++)
                 {
                     strujaKlon = Instantiate(ribaStruja, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -4f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     strujaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
@@ -167,7 +171,7 @@ public class ribicaSpawn : MonoBehaviour
             }
             else if ((pos1.y <= -55 && pos1.y>-95)|| (pos1.y < -20 && pos1.y >= -30))
             {
-                for (int i = 0; i < Random.Range(1f, 6f); i++)
+                for (int i = 0; i < Random.Range(1f, 5f); i++)
                 {
                     strujaKlon = Instantiate(ribaStruja, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y -5.12f - Random.Range(0f, 70f) / 7f, -4f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     strujaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
@@ -194,7 +198,7 @@ public class ribicaSpawn : MonoBehaviour
                 }
             }
             else if(pos1.y<=-90f)
-                for (int i = 0; i < Random.Range(-3f, 2f); i++)
+                for (int i = 0; i < Random.Range(-2f, 2f); i++)
                 {
                     strujaKlon = Instantiate(ribaNemo, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -8f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     strujaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
@@ -279,7 +283,7 @@ public class ribicaSpawn : MonoBehaviour
                 }
             }
             else if (pos1.y <= -200f)
-                for (int i = 0; i < Random.Range(-4f, 2f); i++)
+                for (int i = 0; i < Random.Range(-3.5f, 2f); i++)
                 {
                     ajkulaKlon = Instantiate(ribaPatrik, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -25f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     ajkulaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
@@ -326,7 +330,7 @@ public class ribicaSpawn : MonoBehaviour
                 }
             }
             else if (pos1.y <= -240f)
-                for (int i = 0; i < Random.Range(-3f, 2f); i++)
+                for (int i = 0; i < Random.Range(-2.5f, 2f); i++)
                 {
                     ajkulaKlon = Instantiate(ribaSkrga, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -35f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     ajkulaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
