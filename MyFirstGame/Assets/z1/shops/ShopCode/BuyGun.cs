@@ -66,10 +66,10 @@ public class BuyGun : MonoBehaviour
         if (currency.allCurrency >= ammop)
         {
             currency.allCurrency -= ammop;
-            if (ammop < 1000)
-                ammop *= 3;
+            if (ammop < 1500)
+                ammop = (int)(ammop*2.3f);
             else
-                ammop *= 2;
+                ammop = (int)(ammop*1.3f);
             pucajRibu.brojMetaka++;
             v10.GetComponent<Text>().text = "" + ammop;
             text.GetComponent<Text>().text = "ADDS 1 MORE SHOOT \nYOU NOW HAVE: " + pucajRibu.brojMetaka + " SHOOTS";
@@ -114,7 +114,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 100;
-            uhvatiRibu.dmg = 0.8f * 1.5f;
+            uhvatiRibu.dmg =  1.5f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -156,7 +156,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 75;
-            uhvatiRibu.dmg = 0.8f * 2.4f;
+            uhvatiRibu.dmg =  2.4f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -198,7 +198,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 60;
-            uhvatiRibu.dmg = 0.8f * 3.2f;
+            uhvatiRibu.dmg =  3.2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -240,7 +240,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 50;
-            uhvatiRibu.dmg = 0.8f * 3.5f;
+            uhvatiRibu.dmg =  3.6f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -281,7 +281,7 @@ public class BuyGun : MonoBehaviour
             v14.GetComponent<Text>().text = ""+rpgp;
             v15.GetComponent<Text>().text = "IN USE";
             ShakeCam.shakePower = 50;
-            uhvatiRibu.dmg = 0.8f * 3.8f;
+            uhvatiRibu.dmg =  4.0f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -321,7 +321,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 120;
-            uhvatiRibu.dmg = 0.8f*1.1f;
+            uhvatiRibu.dmg = 1.1f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -361,7 +361,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 110;
-            uhvatiRibu.dmg = 0.8f*1.2f;
+            uhvatiRibu.dmg = 1.2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -401,7 +401,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 105;
-            uhvatiRibu.dmg = 0.8f*1.4f;
+            uhvatiRibu.dmg = 1.4f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -441,7 +441,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 110;
-            uhvatiRibu.dmg = 0.8f*1.6f;
+            uhvatiRibu.dmg = 1.6f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -481,7 +481,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 90;
-            uhvatiRibu.dmg = 0.8f*1.75f;
+            uhvatiRibu.dmg =1.75f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -521,7 +521,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 80;
-            uhvatiRibu.dmg = 0.8f*2f;
+            uhvatiRibu.dmg = 2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -561,7 +561,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 90;
-            uhvatiRibu.dmg = 0.8f*2.2f;
+            uhvatiRibu.dmg =2.2f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -601,7 +601,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 70;
-            uhvatiRibu.dmg = 0.8f*2.9f;
+            uhvatiRibu.dmg = 2.9f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }
@@ -641,7 +641,7 @@ public class BuyGun : MonoBehaviour
             v15.GetComponent<Text>().text = "" + rpgiip;
 
             ShakeCam.shakePower = 80;
-            uhvatiRibu.dmg = 0.8f*2.6f;
+            uhvatiRibu.dmg = 2.6f;
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
     }

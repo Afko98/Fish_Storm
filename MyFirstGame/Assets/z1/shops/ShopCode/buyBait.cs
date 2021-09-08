@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class buyBait: MonoBehaviour
 {
 
-    public static int baitp = 10;
+    public static int baitp = 20;
     public GameObject tekst;
     public GameObject v,coinupdate;
 
@@ -21,10 +21,10 @@ public class buyBait: MonoBehaviour
         if (currency.allCurrency >= baitp)
         {
             currency.allCurrency -= baitp;
-            if (baitp < 1000)
-                baitp *= 3;
-            else if (baitp >= 1000 && baitp < 20000)
-                baitp = (int)(baitp * 1.4f);
+            if (baitp < 340)
+                baitp = (int)(baitp * 2.1f);
+            else if (baitp >= 340 && baitp < 4000)
+                baitp = (int)(baitp * 1.25f);
             else
                 baitp = (int)(baitp * 1.1f);
             CameraMove.brojMaxZakacenihRibica+=3;

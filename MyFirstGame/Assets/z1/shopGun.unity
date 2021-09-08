@@ -1848,7 +1848,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 3.5X DMG AREA
+      value: 3.6X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2334,7 +2334,7 @@ PrefabInstance:
     - target: {fileID: 8932819655889406674, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 3.8X DMG AREA
+      value: 4X DMG AREA
       objectReference: {fileID: 0}
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}

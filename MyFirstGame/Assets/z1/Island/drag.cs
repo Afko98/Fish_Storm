@@ -11,7 +11,7 @@ public class drag : MonoBehaviour
     void Update()
     {
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if(transform.position.x <(cursorPos.x + 0.3f) && transform.position.x>(cursorPos.x-0.3f) && transform.position.y < (cursorPos.y +0.3f)&& transform.position.y>(cursorPos.y - 0.3f))
+        if(transform.position.x <(cursorPos.x + 0.7f) && transform.position.x>(cursorPos.x-0.7f) && transform.position.y < (cursorPos.y +0.7f)&& transform.position.y>(cursorPos.y - 0.7f))
         {
             transform.position = cursorPos;
             uslov = true;

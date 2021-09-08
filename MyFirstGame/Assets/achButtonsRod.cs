@@ -20,11 +20,11 @@ public class achButtonsRod : MonoBehaviour
         if (g4)
             v4.GetComponent<Text>().text = "DONE";
         if (g5)
-            v4.GetComponent<Text>().text = "DONE";
+            v5.GetComponent<Text>().text = "DONE";
         if (g6)
-            v4.GetComponent<Text>().text = "DONE";
+            v6.GetComponent<Text>().text = "DONE";
         if (g7)
-            v4.GetComponent<Text>().text = "DONE";
+            v7.GetComponent<Text>().text = "DONE";
 
     }
 

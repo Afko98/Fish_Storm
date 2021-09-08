@@ -5,7 +5,7 @@ public class pucajRibu : MonoBehaviour
 {
     
     public static int killed = 0;
-    public static int brojMetaka = 2;
+    public static int brojMetaka = 3;
     public static int brM;
     public GameObject krv,krvKlon;
     int brMetakaMax;

@@ -7,8 +7,9 @@ public class ribicaSpawn : MonoBehaviour
     [SerializeField] GameObject ribaObicna, ribaStruja, ribaJelly, ribaRavna,ribaAjkula,ribaIgla,ribaZlatna,ribaCrvena,smece,kutija,gift,ribaNemo,ribaSkrga,ribaPatrik,ribaObicnaZelena;
 
     public Vector3 pos2 = Camera.main.transform.position;
+    public Vector3 pos3 = Camera.main.transform.position;
     public GameObject obicnaKlon,strujaKlon,jellyKlon,ravnaKlon,riba,ajkulaKlon,blago,blagoKlon,smeceKlon,crvenaKlon,kutijaKlon,giftKlon;
-
+    bool uslov = false,nemojSpawnat=false;
     public void KillCrate(float x,float y)
     {
         for (int i = 0; i < Random.Range(-2f, 6f); i++)  //gift
@@ -106,10 +107,10 @@ public class ribicaSpawn : MonoBehaviour
         
         
         ///////////////////////////////////  obicna
-        if (pos1.y<pos2.y)
+        if (((pos1.y<pos2.y && !CameraMove.uslovVracanja) || (CameraMove.uslovVracanja && pos1.y>pos2.y-20.48f)) && !nemojSpawnat)
         {
             
-                if(pos1.y>-18f)
+                if(pos1.y>-18f && pos1.y<-1f)
                 for (int i = 0; i < Random.Range(5f, 14f); i++)
                 {
                     obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f)/7f,-2f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
@@ -117,8 +118,8 @@ public class ribicaSpawn : MonoBehaviour
                     obicnaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
                 
                 }
-                else if(pos1.y>-35)
-                    for (int i = 0; i < Random.Range(1f, 8f); i++)
+                else if(pos1.y>-35f && pos1.y <= -18f)
+                    for (int i = 0; i < Random.Range(1f, 10f); i++)
                     {
                         obicnaKlon = Instantiate(ribaObicna, new Vector3(Random.Range(-24f, 24f)/10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -2f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                 
@@ -134,7 +135,7 @@ public class ribicaSpawn : MonoBehaviour
                  
                 }
             ///////////////////////// obicnaZelena
-            if (pos1.y > -20f)
+            if (pos1.y > -20f && pos1.y < -1f)
             {
                 for (int i = 0; i < Random.Range(4f, 11f); i++)
                 {
@@ -392,7 +393,7 @@ public class ribicaSpawn : MonoBehaviour
                     ajkulaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
                 }
 
-                for (int i = 0; i < Random.Range(-8f, 1.2f); i++)
+                for (int i = 0; i < Random.Range(-10f, 1f); i++)
                 {
                     kutijaKlon = Instantiate(kutija, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -13f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     kutijaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
@@ -407,7 +408,7 @@ public class ribicaSpawn : MonoBehaviour
                     giftKlon = Instantiate(gift, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -11f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     giftKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
                 }
-                for (int i = 0; i < Random.Range(-3f, 1f); i++)
+                for (int i = 0; i < Random.Range(-10f, 1f); i++)
                 {
                     kutijaKlon = Instantiate(kutija, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -13f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     kutijaKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
@@ -447,8 +448,31 @@ public class ribicaSpawn : MonoBehaviour
                 }
 
             ////////////////
+            if (!CameraMove.uslovVracanja)
+                pos2.y -= 5.12f;
+            else
+            {
+                if (!uslov)
+                {
+                    if (pos2.y > -23.60f)
+                        nemojSpawnat = true;
+                    else
+                    {
+                        pos2.y += 23.60f;
+                        uslov = true;
+                    }
+                }
+                else
+                {
+                    if (pos2.y > -5.12f)
+                        nemojSpawnat = true;
 
-            pos2.y-=5.12f;
+                    else
+                    pos2.y += 5.12f;
+                }
+                
+            }
+
         }
     }
     

@@ -8,7 +8,7 @@ public class uhvatiRibu : MonoBehaviour
 {
     public GameObject kuka, krv, krvKlon;
     public List<GameObject> ribaNiz = new List<GameObject>();
-    public static float dmg = 0.8f;
+    public static float dmg = 1f;
     public static int bombExploded = 0;
 
   
@@ -82,6 +82,7 @@ public class uhvatiRibu : MonoBehaviour
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
         gameObject.GetComponent<Rigidbody2D>().rotation = Random.Range(-180f, 180f);
+        gameObject.transform.tag = "uhvacena";
         ribaNiz.Add(gameObject);
 
     }
@@ -106,7 +107,7 @@ public class uhvatiRibu : MonoBehaviour
             {
 
                 ribaNiz[i].transform.position = new Vector3(kuka.transform.position.x, kuka.transform.position.y, ribaNiz[i].transform.position.z);
-                ribaNiz[i].transform.tag = "uhvacena";
+                
 
             }
     }

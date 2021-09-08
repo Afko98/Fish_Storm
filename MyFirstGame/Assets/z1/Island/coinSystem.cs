@@ -23,17 +23,17 @@ public class coinSystem : MonoBehaviour
             SaveSystem.SavePlayer();
             petSekStart = DateTime.UtcNow;
         }
-        if (coinsOnScreen >= maxVrijeme.TotalSeconds / petMin.TotalSeconds * spawnAkvariji.brRibicaUAkvarijumu)
+        if (coinsOnScreen >= maxVrijeme.TotalSeconds / petMin.TotalSeconds * spawnAkvariji.brRibicaUAkvarijumu/5)
             startTime = DateTime.UtcNow;
 
         TimeSpan currentTime = DateTime.UtcNow - startTime;
         if (currentTime > maxVrijeme)
             startTime = DateTime.UtcNow - new TimeSpan(11, 55, 1);
 
-        if (currentTime >= petMin && coinsOnScreen<=maxVrijeme.TotalSeconds /petMin.TotalSeconds *spawnAkvariji.brRibicaUAkvarijumu)
+        if (currentTime >= petMin && coinsOnScreen<=maxVrijeme.TotalSeconds /petMin.TotalSeconds *spawnAkvariji.brRibicaUAkvarijumu/5)
         {
             startTime += petMin;
-            for (int i = 0; i < spawnAkvariji.brRibicaUAkvarijumu; i++)
+            for (int i = 0; i < spawnAkvariji.brRibicaUAkvarijumu/5; i++)
             {
                 coinsOnScreen++;
                 Instantiate(coin, new Vector2(UnityEngine.Random.Range(-2.3f, 2.5f), -2.4f), Quaternion.identity);
@@ -42,10 +42,10 @@ public class coinSystem : MonoBehaviour
 
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (transform.position.x < (cursorPos.x + 0.1f) && transform.position.x > (cursorPos.x - 0.1f) && transform.position.y < (cursorPos.y + 0.1f) && transform.position.y > (cursorPos.y - 0.1f))
+        if (transform.position.x < (cursorPos.x + 0.5f) && transform.position.x > (cursorPos.x - 0.5f) && transform.position.y < (cursorPos.y + 0.5f) && transform.position.y > (cursorPos.y - 0.5f))
         {
             Instantiate(obj, transform.position, Quaternion.identity);
-            currency.allCurrency++;
+            currency.allCurrency+=5;
             coinsOnScreen--;
             coinUpdate.GetComponent<coinCityUpdate>().UpdateCoinsCity();
             Destroy(gameObject);

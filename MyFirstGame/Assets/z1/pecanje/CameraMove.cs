@@ -10,12 +10,12 @@ public class CameraMove : MonoBehaviour
     
     public static float camspeed = 0.9f,camspeed1;
     public static int brojZakacenihRibica=0;
-    public bool uslovVracanja = false;
-    public static float uze=10f;
+    static public bool uslovVracanja = false;
+    public static float uze=25f;
     public static int brojMaxZakacenihRibica=5;
     public static int brojMaxZakacenihUIgri;
     public static int totalTravel=0;
-    public GameObject startDugme;
+    public GameObject startDugme,chestDelete;
     public static bool boost1 = false,boost2=false,boost3=false;
     static public float pomocnaSpeed,inGameCamSpeed;
     public GameObject boostPanel;
@@ -30,6 +30,7 @@ public class CameraMove : MonoBehaviour
         boost3 = false;
         Time.timeScale = 0;
         brojMaxZakacenihUIgri = brojMaxZakacenihRibica;
+        uslovVracanja = false;
     }
 
     public void kupiBoostI()
@@ -56,7 +57,7 @@ public class CameraMove : MonoBehaviour
         Time.timeScale = 1;
         startDugme.SetActive(false);
     }
-    public void Update()
+    public void FixedUpdate()
     {
         
         brojZakacenihRibica = GameObject.FindGameObjectsWithTag("uhvacena").Length;
@@ -101,7 +102,10 @@ public class CameraMove : MonoBehaviour
     public void PremaGore()
     {
         boostPanel.SetActive(false);
-
+        if(transform.position.y<-5f)
+        chestDelete.transform.position = new Vector2(chestDelete.transform.position.x, transform.position.y - 9f);
+        else
+            chestDelete.transform.position = new Vector2(chestDelete.transform.position.x, transform.position.y - 25f);
         if (brojZakacenihRibica < brojMaxZakacenihUIgri && transform.position.y < 2)
         {
             Vector3 pos1 = transform.position;
@@ -130,15 +134,23 @@ public class CameraMove : MonoBehaviour
     public void PremaDole()
     {
         Vector3 pos1 = transform.position;
+        if (boost3)
+            inGameCamSpeed = 6f;
 
-        if (!boost1 && !boost2)
-            inGameCamSpeed += Time.deltaTime / 100;
+        else if (!boost1 && !boost2)
+        {
+            if (transform.position.y > -100f)
+                inGameCamSpeed = 1.7f;
+            else if (transform.position.y > -200f)
+                inGameCamSpeed = 2f;
+            else
+                inGameCamSpeed = 2.2f;
+        }
         else if (boost1)
         {
             inGameCamSpeed = 8f;
             if (transform.position.y < -49f)
             {
-                inGameCamSpeed = 1.27f;
                 boost1 = false;
             }
         }
@@ -147,21 +159,13 @@ public class CameraMove : MonoBehaviour
             inGameCamSpeed = 13f;
             if (transform.position.y < -149f)
             {
-                inGameCamSpeed = 1.5f;
+                inGameCamSpeed = 1.7f;
                 boost2 = false;
             }
         }
 
-        if (inGameCamSpeed < 2f)
-            pomocnaSpeed = inGameCamSpeed;
-
-        if(inGameCamSpeed > 2f && !boost1 && !boost2 && !boost3)
-            inGameCamSpeed = pomocnaSpeed;
-
-        else if (inGameCamSpeed > 2f && !boost1 && !boost2 && !boost3)
-            inGameCamSpeed = 2f;
-        if (boost3)
-            inGameCamSpeed = 5f;
+        
+        
         
             
         pos1.y -= Time.deltaTime * inGameCamSpeed;

@@ -5,7 +5,7 @@ using System.Collections;
 
 public class FollowMouse : MonoBehaviour
 {
-    public static float moveSpeed = 0.008f;
+    public static float moveSpeed = 0.012f;
     public static float boostTime,inGameBoostTime;
     public bool uslov;
     public int brojObicnih, brojStruja, brojUkupnih;
@@ -67,13 +67,13 @@ public class FollowMouse : MonoBehaviour
 
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (inGameBoostTime < 0.01f)
         {
             boostPanel.SetActive(false);
         }
-        uslov = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraMove>().uslovVracanja;
+        uslov = CameraMove.uslovVracanja;
 
         if (!uslov)
         {
@@ -120,19 +120,7 @@ public class FollowMouse : MonoBehaviour
 
         
 
-        if (transform.position.y > Camera.main.transform.position.y + 3.2f)
-        {
-            
-
-            transform.position = new Vector3(transform.position.x, transform.position.y - CameraMove.inGameCamSpeed * Time.deltaTime, -350f);
-            if (transform.position.y > Camera.main.transform.position.y + 3.2f)
-                transform.position = new Vector2(transform.position.x, Camera.main.transform.position.y + 3.2f);
-            if (!CameraMove.boost1 && !CameraMove.boost2)
-            {
-                gameObject.GetComponent<CapsuleCollider2D>().enabled = (true);
-                CameraMove.boost3 = false;
-            }
-        }
+        
 
         if (cursorPos.y < Camera.main.transform.position.y - 2.8f)
         {
@@ -178,6 +166,9 @@ public class FollowMouse : MonoBehaviour
     }
     void PremaGore()
     {
+        if (Camera.main.transform.position.y > 2f)
+            Destroy(gameObject);
+
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (cursorPos.y < 0)
             yKoordinata = cursorPos.y;

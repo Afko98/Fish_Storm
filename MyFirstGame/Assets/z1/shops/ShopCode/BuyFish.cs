@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class BuyFish : MonoBehaviour
 {
     
-    public static int fish1p = 50, fish2p = 50, fish3p = 50, fish4p = 50, fish5p = 50, fish6p = 50,fish7p=50,fish8p=50,fish9p=50;
+    public static int fish1p = 150, fish2p = 150, fish3p = 150, fish4p = 150, fish5p = 150, fish6p = 150,fish7p=150,fish8p=150,fish9p=150;
     public Text v1, v2, v3, v4, v5, v6,v7,v8,v9;
     public GameObject coinupdate;
 
@@ -30,7 +30,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish1p)
         {
             currency.allCurrency -= fish1p;
-            fish1p *= 2;
+            fish1p = (int)(fish1p*1.6f);
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -52,7 +52,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish2p)
         {
             currency.allCurrency -= fish2p;
-            fish2p *= 2;
+            fish2p = (int)(fish2p * 1.6f);
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -74,7 +74,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish3p)
         {
             currency.allCurrency -= fish3p;
-            fish3p*=3 ;
+            fish3p = (int)(fish3p * 1.8f);
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -95,7 +95,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish4p)
         {
             currency.allCurrency -= fish4p;
-            fish4p *= 3;
+            fish4p = (int)(fish4p * 1.8f);
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -116,7 +116,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish5p)
         {
             currency.allCurrency -= fish5p;
-            fish5p *= 3;
+            fish5p = (int)(fish5p * 1.8f);
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -137,7 +137,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish6p)
         {
             currency.allCurrency -= fish6p;
-            fish6p *= 4;
+            fish6p = (int)(fish6p * 2.2f);
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -158,7 +158,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish7p)
         {
             currency.allCurrency -= fish7p;
-            fish7p *= 4;
+            fish7p = (int)(fish7p * 2.2f);
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -179,7 +179,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish8p)
         {
             currency.allCurrency -= fish8p;
-            fish8p *= 5;
+            fish8p = (int)(fish8p * 2.4f);
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;
@@ -200,7 +200,7 @@ public class BuyFish : MonoBehaviour
         if (currency.allCurrency >= fish9p)
         {
             currency.allCurrency -= fish9p;
-            fish9p *= 5;
+            fish9p = (int)(fish9p * 2.4f);
 
             v1.GetComponent<Text>().text = "" + fish1p;
             v2.GetComponent<Text>().text = "" + fish2p;

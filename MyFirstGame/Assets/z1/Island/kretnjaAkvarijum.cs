@@ -26,7 +26,7 @@ public class kretnjaAkvarijum : MonoBehaviour
     {
 
         p++;
-        transform.position = new Vector2(transform.position.x+(i * 0.0007f), transform.position.y + ((0.0005f) * Mathf.Cos(p / 320f + transform.position.x + transform.position.y)));
+        transform.position = new Vector2(transform.position.x+(i * 0.2f*Time.deltaTime), transform.position.y + ((0.15f * Time.deltaTime) * Mathf.Cos(p / 320f + transform.position.x + transform.position.y)));
 
         if (transform.position.x < -2.4f && transform.position.x>-2.8f)
         {

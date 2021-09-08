@@ -128,6 +128,8 @@ public class Data
         rpgiip = BuyGun.rpgiip;
         nadeLauncherp = BuyGun.nadeLauncherp;
 
+        ammop = BuyGun.ammop;
+
         baitp = buyBait.baitp;
 
         fish1p = BuyFish.fish1p;

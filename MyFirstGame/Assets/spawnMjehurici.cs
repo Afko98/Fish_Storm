@@ -8,77 +8,12 @@ public class spawnMjehurici : MonoBehaviour
 
     public Vector3 pos2 = Camera.main.transform.position;
     public GameObject stranaKlon, sredinaKlon, linijaKlon, strana, sredina, linija,bomba,bombaMid,bitePower,bulletPower;
-    int p = 0;
-    int p1 = 45;
-    int p2 = 73;
-    int p3 = 122;
+   
 
     void Update()
-    { 
+    {
         Vector3 pos1 = Camera.main.transform.position;
-        foreach (var c in GameObject.FindGameObjectsWithTag("obicna"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x , c.transform.position.y + 0.00035f * Mathf.Sin(p / 180f+ c.transform.position.x+ c.transform.position.y),c.transform.position.z);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("crvena"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.00039f * Mathf.Sin(p / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("smece"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x , c.transform.position.y + 0.002f * Mathf.Sin(p / 300f), c.transform.position.z);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("zlatna"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.00035f * Mathf.Sin(p / 180f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("jelly"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.0013f * Mathf.Sin(p / 160f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("ajkula"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x + 0.0007f * Mathf.Sin(p / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0006f * Mathf.Sin(p / 500f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("igla"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x + 0.0007f * Mathf.Sin(p / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.y + 0.0012f * Mathf.Sin(p1 / 200f + c.transform.position.x + c.transform.position.y), c.transform.position.z);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("struja"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x + 0.0008f * Mathf.Sin(p / 120f + c.transform.position.x + c.transform.position.y), c.transform.position.y, c.transform.position.z);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("bomb"))
-        {
-            c.transform.position = new Vector2(c.transform.position.x + 0.0008f*Mathf.Cos(p/200f) , c.transform.position.y + 0.0011f * Mathf.Sin(p/400f));
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("patrik"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.0011f * Mathf.Sin(p / 350f), c.transform.position.z);
-            c.transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(p / 300f) *14f);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("crate"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.002f * Mathf.Sin(p1 / 350f ), c.transform.position.z);
-            c.transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(p / (300 - c.transform.position.y)) * 14f);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("gift"))
-        {
-            c.transform.position = new Vector3(c.transform.position.x, c.transform.position.y + 0.004f *c.transform.position.x/100f* Mathf.Sin(p1 / 300f), c.transform.position.z);
-            c.transform.rotation = Quaternion.Euler(0, 0, Mathf.Sin(p / (300 - c.transform.position.y)) * 14f);
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("bitePower"))
-        {
-            c.transform.position = new Vector2(c.transform.position.x + 0.0035f * Mathf.Cos(p2 / 520f), c.transform.position.y + 0.001f * Mathf.Sin(p3 / 60f));
-        }
-        foreach (var c in GameObject.FindGameObjectsWithTag("bulletPower"))
-        {
-            c.transform.position = new Vector2(c.transform.position.x + 0.004f * Mathf.Cos(p3 / 500f), c.transform.position.y + 0.001f * Mathf.Sin(p1 / 50f));
-        }
-        p++;
-        p1++;
-        p2++;
-        p3++;
+        
         if (pos1.y < pos2.y)
         {
             for (int i = 0; i < Random.Range(-0.5f, 2f); i++)
@@ -88,8 +23,6 @@ public class spawnMjehurici : MonoBehaviour
                     stranaKlon = Instantiate(strana, new Vector2(k * 3.2f - 1.6f, pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), transform.rotation * Quaternion.Euler(0f, 1f * 180f, 0f));
                 else
                     stranaKlon = Instantiate(strana, new Vector2(k * 3.2f - 1.6f, pos2.y - 5.12f - Random.Range(0f, 50f) / 6f), transform.rotation * Quaternion.Euler(0f, 0f * 180f, 0f));
-
-                
             }
 
             ////////////////////////////////////

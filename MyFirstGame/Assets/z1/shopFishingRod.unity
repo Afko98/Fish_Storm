@@ -526,7 +526,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 15000
+      value: 11000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -755,7 +755,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 6000
+      value: 4500
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -987,7 +987,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 75000
+      value: 55000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2009,9 +2009,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: '2000
-
-'
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2545,7 +2543,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 40000
+      value: 35000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
@@ -2756,7 +2754,7 @@ PrefabInstance:
     - target: {fileID: 8932819655915606235, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}
       propertyPath: m_Text
-      value: 25000
+      value: 20000
       objectReference: {fileID: 0}
     - target: {fileID: 8932819656214668442, guid: 4151fefd4eb2c4a45af76f8a2ac1f017,
         type: 3}

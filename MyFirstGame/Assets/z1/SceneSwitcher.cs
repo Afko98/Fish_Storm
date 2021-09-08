@@ -90,6 +90,8 @@ public class SceneSwitcher : MonoBehaviour
             BuyGun.rpgiip=data.rpgiip;
             BuyGun.nadeLauncherp=data.nadeLauncherp;
 
+            BuyGun.ammop = data.ammop;
+
             buyBait.baitp=data.baitp;
 
             BuyFish.fish1p=data.fish1p;
