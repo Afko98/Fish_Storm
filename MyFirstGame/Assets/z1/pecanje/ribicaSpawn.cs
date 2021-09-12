@@ -430,13 +430,13 @@ public class ribicaSpawn : MonoBehaviour
             /////////////////////////////////    gift
 
             if(pos1.y<-20f)
-                for (int i = 0; i < Random.Range(-7f, 1.6f); i++)
+                for (int i = 0; i < Random.Range(-6f, 1.6f); i++)
                 {
                     giftKlon = Instantiate(gift, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -11f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     giftKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);
                 }
             if (pos1.y < -120f)
-                for (int i = 0; i < Random.Range(-6f, 1.1f); i++)
+                for (int i = 0; i < Random.Range(-6f, 1.5f); i++)
                 {
                     giftKlon = Instantiate(gift, new Vector3(Random.Range(-24f, 24f) / 10f, pos2.y - 5.12f - Random.Range(0f, 70f) / 7f, -11f), transform.rotation * Quaternion.Euler(0f, Random.Range(0, 2) * 180f, 0f)) as GameObject;
                     giftKlon.GetComponent<SpriteRenderer>().sortingOrder = Random.Range(0, 8);

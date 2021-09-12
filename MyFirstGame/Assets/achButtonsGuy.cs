@@ -32,7 +32,7 @@ public class achButtonsGuy : MonoBehaviour
     {
         if (achivments.watch5 && !d1)
         {
-            currency.allCurrency += 500;
+            currency.allCurrency += 2000;
             v1.GetComponent<Text>().text = "DONE";
             d1 = true;
             coinUpdate.GetComponent<allcoinsdisplay>().Koliko();
@@ -43,7 +43,7 @@ public class achButtonsGuy : MonoBehaviour
 
         if (achivments.watch10 && !d2)
         {
-            currency.allCurrency += 1000;
+            currency.allCurrency += 4000;
             v2.GetComponent<Text>().text = "DONE";
             d2 = true;
             coinUpdate.GetComponent<allcoinsdisplay>().Koliko();

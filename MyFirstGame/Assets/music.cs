@@ -22,7 +22,7 @@ public class music : MonoBehaviour
     }
     void Start()
     {
-        random = Random.Range(0, 3);
+        random = Random.Range(0, 2);
         if (random == 0)
         {
             track1.Play();
@@ -30,13 +30,13 @@ public class music : MonoBehaviour
         }
         if (random == 1)
         {
-            track2.Play();
-            playing = 2;
+            track3.Play();
+            playing = 3;
         }
         if (random == 2)
         {
-            track3.Play();
-            playing = 3;
+            track2.Play();
+            playing = 2;
         }
     }
 

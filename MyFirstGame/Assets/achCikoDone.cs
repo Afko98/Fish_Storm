@@ -11,10 +11,19 @@ public class achCikoDone : MonoBehaviour
 
     public void Start()
     {
-        v1.GetComponent<Text>().text = "DONE: x%";
-        v2.GetComponent<Text>().text = "DONE: x%";
-        v3.GetComponent<Text>().text = "DONE: x%";
-        if(achivments.buyIsland)
+        if(uslovi.brReklama<5)
+        v1.GetComponent<Text>().text = "DONE: "+ uslovi.brReklama*20+"%";
+        else
+            v1.GetComponent<Text>().text = "DONE: 100%";
+        if (uslovi.brReklama < 10)
+            v2.GetComponent<Text>().text = "DONE: " + uslovi.brReklama *10 + "%";
+        else
+            v2.GetComponent<Text>().text = "DONE: 100%";
+        if (uslovi.brReklama < 20)
+            v3.GetComponent<Text>().text = "DONE: " + uslovi.brReklama *5 + "%";
+        else
+            v3.GetComponent<Text>().text = "DONE: 100%";
+        if (achivments.buyIsland)
         v4.GetComponent<Text>().text = "DONE: YES";
         else
         v4.GetComponent<Text>().text = "DONE: NO";

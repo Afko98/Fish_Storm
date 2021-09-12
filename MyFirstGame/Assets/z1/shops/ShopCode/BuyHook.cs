@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class BuyHook : MonoBehaviour
 {
     public static bool hook1 = false, hook2 = false, hook3 = false,hook4=false,hook5=false,hook6=false;
-    public static int hook1p = 20, hook2p = 100, hook3p = 1000, hook4p=4000, hook5p=10000,hook6p=30000;
+    public static int hook1p = 20, hook2p = 100, hook3p = 2000, hook4p=8000, hook5p=20000,hook6p=40000;
     public Text v1, v2, v3,v4,v5,v6;
     public GameObject coinupdate;
 
@@ -44,7 +44,7 @@ public class BuyHook : MonoBehaviour
             v4.GetComponent<Text>().text = "" + hook4p;
             v5.GetComponent<Text>().text = "" + hook5p;
             v6.GetComponent<Text>().text = "" + hook6p;
-            FollowMouse.moveSpeed = 1.5f * 0.012f;
+            FollowMouse.moveSpeed = 1.5f * 0.007f;
 
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -67,7 +67,7 @@ public class BuyHook : MonoBehaviour
             v4.GetComponent<Text>().text = "" + hook4p;
             v5.GetComponent<Text>().text = "" + hook5p;
             v6.GetComponent<Text>().text = "" + hook6p;
-            FollowMouse.moveSpeed = 2f * 0.012f;
+            FollowMouse.moveSpeed = 2f * 0.007f;
 
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -90,7 +90,7 @@ public class BuyHook : MonoBehaviour
             v4.GetComponent<Text>().text = "" + hook4p;
             v5.GetComponent<Text>().text = "" + hook5p;
             v6.GetComponent<Text>().text = "" + hook6p;
-            FollowMouse.moveSpeed = 3f * 0.012f;
+            FollowMouse.moveSpeed = 3f * 0.007f;
 
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -113,7 +113,7 @@ public class BuyHook : MonoBehaviour
             v4.GetComponent<Text>().text = "IN USE";
             v5.GetComponent<Text>().text = "" + hook5p;
             v6.GetComponent<Text>().text = "" + hook6p;
-            FollowMouse.moveSpeed = 4f * 0.012f;
+            FollowMouse.moveSpeed = 4f * 0.007f;
 
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -136,7 +136,7 @@ public class BuyHook : MonoBehaviour
             v4.GetComponent<Text>().text = "" + hook4p;
             v5.GetComponent<Text>().text = "IN USE";
             v6.GetComponent<Text>().text = "" + hook6p;
-            FollowMouse.moveSpeed = 5f * 0.012f;
+            FollowMouse.moveSpeed = 5f * 0.007f;
 
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }
@@ -159,7 +159,7 @@ public class BuyHook : MonoBehaviour
             v4.GetComponent<Text>().text = "" + hook4p;
             v5.GetComponent<Text>().text = "" + hook5p;
             v6.GetComponent<Text>().text = "IN USE";
-            FollowMouse.moveSpeed = 7f * 0.012f;
+            FollowMouse.moveSpeed = 7f * 0.007f;
 
             coinupdate.GetComponent<allcoinsdisplay>().Koliko();
         }

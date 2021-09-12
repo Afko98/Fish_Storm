@@ -24,6 +24,8 @@ public class uhvatiRibu : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collider)
     {
+        if (collider.tag == "mjehurici")
+            return;
 
         if (collider.name != "kuka1" || CameraMove.brojMaxZakacenihUIgri <= GameObject.FindGameObjectsWithTag("uhvacena").Length)
         {

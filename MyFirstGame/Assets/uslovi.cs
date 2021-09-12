@@ -9,7 +9,7 @@ public class uslovi : MonoBehaviour
     public static bool firstTimeGame = true;
     public GameObject tut,startScreen;
     public static bool daLiJeIspaljena,shake;
-    public static int giftsInGame;
+    public static int giftsInGame, brReklama = 0;
 
     private void Start()
     {

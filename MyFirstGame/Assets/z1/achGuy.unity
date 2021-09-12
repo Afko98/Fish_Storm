@@ -1148,7 +1148,7 @@ PrefabInstance:
     - target: {fileID: 5821121545220520447, guid: 187ff678329a12443a6fd7c3a8f17d2a,
         type: 3}
       propertyPath: m_Text
-      value: 500
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 5821121545509463349, guid: 187ff678329a12443a6fd7c3a8f17d2a,
         type: 3}
@@ -3314,7 +3314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 399.98, y: -150.82}
+  m_AnchoredPosition: {x: 400, y: -158}
   m_SizeDelta: {x: 600.8, y: 133.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763492481
@@ -3339,7 +3339,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4697d0915fa88274aab234e88dee0306, type: 3}
-    m_FontSize: 49
+    m_FontSize: 43
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -3366,6 +3366,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 137341395}
     m_Modifications:
+    - target: {fileID: 5821121545220520447, guid: 187ff678329a12443a6fd7c3a8f17d2a,
+        type: 3}
+      propertyPath: m_Text
+      value: 4000
+      objectReference: {fileID: 0}
     - target: {fileID: 5821121545509463349, guid: 187ff678329a12443a6fd7c3a8f17d2a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
